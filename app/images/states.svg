@@ -14,30 +14,30 @@
 	xml:space="preserve"
 >
 	<defs>
-		<!-- make sure these colors are set to match the colors in sass -->
+		<!-- colors will be set to match scss files in our svgMap directive -->
 		<pattern id="clinton-republican" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#990000"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/clinton.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 		<pattern id="clinton-democrat" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#000099"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/clinton.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 		<pattern id="clinton-swing" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#009900"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/clinton.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 
 		<pattern id="sanders-republican" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#990000"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/sanders.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 		<pattern id="sanders-democrat" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#000099"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/sanders.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 		<pattern id="sanders-swing" width="1" height="1" patternContentUnits="objectBoundingBox">
-			<rect x="0" y="0" width="1" height="1" fill="#009900"/>
+			<rect x="0" y="0" width="1" height="1" fill="#000000"/>
 			<image xlink:href="images/sanders.svg" x="0" y="0" width="1" height="1" />
 		</pattern>
 	</defs>
@@ -508,4 +508,6 @@
 		<path id="AK-Point" display="inline" fill="#FFD0D0" d="M143.243,482.644"/>
 		<path id="HI-Point" display="inline" fill="#FFD0D0" d="M342.243,548.644"/>
 	</g>
+
+	<g id="state-winners"></g>
 </svg>

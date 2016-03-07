@@ -50,13 +50,13 @@
         "abbv": "ME",
         "electoralVotes": 4,
         "party": "democrat",
-        "winner": null,
+        "winner": "sanders",
         "lastDemVictory": 2012,
         "historyUrl": "http://www.270towin.com/states/Maine",
         "primaryDate": "2016-03-06",
         "delegates": {
-            "clinton": 0,
-            "sanders": 0
+            "clinton": 6,
+            "sanders": 14
         }
     },
     {

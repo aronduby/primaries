@@ -4,21 +4,21 @@
   stroke: rgba(0, 0, 0, 0.5);
   cursor: pointer; }
   #StatePolys path.swing {
-    fill: #090;
+    fill: #009900;
     stroke: #006600; }
     #StatePolys path.swing.clinton {
       fill: url(#clinton-swing); }
     #StatePolys path.swing.sanders {
       fill: url(#sanders-swing); }
   #StatePolys path.republican {
-    fill: #900;
+    fill: #990000;
     stroke: #660000; }
     #StatePolys path.republican.clinton {
       fill: url(#clinton-republican); }
     #StatePolys path.republican.sanders {
       fill: url(#sanders-republican); }
   #StatePolys path.democrat {
-    fill: #009;
+    fill: #000099;
     stroke: #000066; }
     #StatePolys path.democrat.clinton {
       fill: url(#clinton-democrat); }

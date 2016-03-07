@@ -20,6 +20,22 @@
                     mapCtrl.click(data);
                 });
 
+                if(data.winner) {
+                    var svg = elm.parent().parent()[0];
+                    var winnerGroup = svg.getElementById('state-winners');
+                    var point = svg.getElementById(data.id + '-Point');
+                    var xy = point.getAttribute('d').replace('M','').split(',');
+                    var img = document.createElementNS("http://www.w3.org/2000/svg", 'image');
+
+                    img.setAttribute('xlink:href', '/images/' + data.winner + '.png');
+                    img.setAttribute('x', xy[0]);
+                    img.setAttribute('y', xy[1]);
+                    img.setAttribute('width', '50px');
+                    img.setAttribute('height', '50px');
+
+                    winnerGroup.appendChild(img);
+                }
+
                 $compile(elm)(scope);
             }
         }]);

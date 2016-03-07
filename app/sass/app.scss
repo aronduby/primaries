@@ -1,6 +1,4 @@
-$republican: #900;
-$democrat: #009;
-$swing: #090; //mix($republican, $democrat);
+@import '_variables';
 
 $darken-amount: 10%;
 $republican-stroke: darken($republican, $darken-amount);
