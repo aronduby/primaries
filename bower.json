@@ -1,0 +1,26 @@
+{
+  "name": "primaries",
+  "description": "visualization of 2016 Democratic primaries",
+  "main": "app/index.html",
+  "authors": [
+    "Aron Duby <aron.duby@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "lodash": "~4.6.1",
+    "moment": "^2.11.2"
+  }
+}

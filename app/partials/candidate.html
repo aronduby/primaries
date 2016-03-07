@@ -1,0 +1,44 @@
+<article class="candidate" ng-class="cvm.key">
+    <header>
+        <h1>{{ cvm.name }}</h1>
+    </header>
+
+    <table>
+        <colgroup>
+            <col>
+            <col class="total">
+            <col class="republican">
+            <col class="democrat">
+            <col class="swing">
+            <col class="not-republican">
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Total</th>
+                <th>Republican</th>
+                <th>Democrat</th>
+                <th>Swing</th>
+                <th>Not Republican</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="states">
+                <th>states</th>
+                <td>{{ cvm.data.total.states }}</td>
+                <td>{{ cvm.data.republican.states }}</td>
+                <td>{{ cvm.data.democrat.states }}</td>
+                <td>{{ cvm.data.swing.states }}</td>
+                <td>{{ cvm.data.notRepublican.states }}</td>
+            </tr>
+            <tr class="delegates">
+                <th>delegates</th>
+                <td>{{ cvm.data.total.delegates }}</td>
+                <td>{{ cvm.data.republican.delegates }}</td>
+                <td>{{ cvm.data.democrat.delegates }}</td>
+                <td>{{ cvm.data.swing.delegates }}</td>
+                <td>{{ cvm.data.notRepublican.delegates }}</td>
+            </tr>
+        </tbody>
+    </table>
+</article>

@@ -1,0 +1,34 @@
+$republican: #900;
+$democrat: #009;
+$swing: #090; //mix($republican, $democrat);
+
+$darken-amount: 10%;
+$republican-stroke: darken($republican, $darken-amount);
+$democrat-stroke: darken($democrat, $darken-amount);
+$swing-stroke: darken($swing, $darken-amount);
+
+#StatePolys path {
+  fill: grey;
+  stroke-width: 1;
+  stroke: rgba(0,0,0,.5);
+  cursor: pointer;
+
+  &.swing {
+    fill: $swing;
+    stroke: $swing-stroke;
+  }
+
+  &.republican {
+    fill: $republican;
+    stroke: $republican-stroke;
+  }
+
+  &.democrat {
+    fill: $democrat;
+    stroke: $democrat-stroke;
+  }
+
+  &.not-voted {
+    opacity: .3;
+  }
+}

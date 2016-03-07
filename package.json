@@ -1,0 +1,21 @@
+{
+  "name": "primaries",
+  "version": "1.0.0",
+  "description": "visualization of 2016 Democratic primaries",
+  "main": "app/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aron Duby <aron.duby@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.1",
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.5",
+    "gulp-sass": "^2.1.1",
+    "main-bower-files": "^2.11.0"
+  }
+}

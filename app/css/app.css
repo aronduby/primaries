@@ -1,0 +1,16 @@
+#StatePolys path {
+  fill: grey;
+  stroke-width: 1;
+  stroke: rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
+  #StatePolys path.swing {
+    fill: #090;
+    stroke: #006600; }
+  #StatePolys path.republican {
+    fill: #900;
+    stroke: #660000; }
+  #StatePolys path.democrat {
+    fill: #009;
+    stroke: #000066; }
+  #StatePolys path.not-voted {
+    opacity: .3; }
