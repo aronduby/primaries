@@ -6,11 +6,23 @@
   #StatePolys path.swing {
     fill: #090;
     stroke: #006600; }
+    #StatePolys path.swing.clinton {
+      fill: url(#clinton-swing); }
+    #StatePolys path.swing.sanders {
+      fill: url(#sanders-swing); }
   #StatePolys path.republican {
     fill: #900;
     stroke: #660000; }
+    #StatePolys path.republican.clinton {
+      fill: url(#clinton-republican); }
+    #StatePolys path.republican.sanders {
+      fill: url(#sanders-republican); }
   #StatePolys path.democrat {
     fill: #009;
     stroke: #000066; }
+    #StatePolys path.democrat.clinton {
+      fill: url(#clinton-democrat); }
+    #StatePolys path.democrat.sanders {
+      fill: url(#sanders-democrat); }
   #StatePolys path.not-voted {
     opacity: .3; }

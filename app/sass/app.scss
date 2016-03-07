@@ -16,16 +16,40 @@ $swing-stroke: darken($swing, $darken-amount);
   &.swing {
     fill: $swing;
     stroke: $swing-stroke;
+
+    &.clinton {
+      fill: url(#clinton-swing);
+    }
+
+    &.sanders {
+      fill: url(#sanders-swing);
+    }
   }
 
   &.republican {
     fill: $republican;
     stroke: $republican-stroke;
+
+    &.clinton {
+      fill: url(#clinton-republican);
+    }
+
+    &.sanders {
+      fill: url(#sanders-republican);
+    }
   }
 
   &.democrat {
     fill: $democrat;
     stroke: $democrat-stroke;
+
+    &.clinton {
+      fill: url(#clinton-democrat);
+    }
+
+    &.sanders {
+      fill: url(#sanders-democrat);
+    }
   }
 
   &.not-voted {

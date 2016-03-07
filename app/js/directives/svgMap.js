@@ -25,7 +25,7 @@
             function ctrl(scope) {
                 this.click = function(data) {
                     console.log(data);
-                }
+                };
             }
 
         }]);
