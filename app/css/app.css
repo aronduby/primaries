@@ -18,3 +18,35 @@
 .map.states--democrat path.republican,
 .map.states--democrat path.swing {
   opacity: .3; }
+
+.map.states--democrat image.republican,
+.map.states--democrat image.swing {
+  opacity: 0; }
+
+.map.states--republican path.democrat,
+.map.states--republican path.swing {
+  opacity: .3; }
+
+.map.states--republican image.democrat,
+.map.states--republican image.swing {
+  opacity: 0; }
+
+.map.states--swing path.democrat,
+.map.states--swing path.republican {
+  opacity: .3; }
+
+.map.states--swing image.democrat,
+.map.states--swing image.republican {
+  opacity: 0; }
+
+.map.candidates--clinton path.sanders {
+  opacity: .3; }
+
+.map.candidates--clinton image.sanders {
+  opacity: 0; }
+
+.map.candidates--sanders path.clinton {
+  opacity: .3; }
+
+.map.candidates--sanders image.clinton {
+  opacity: 0; }

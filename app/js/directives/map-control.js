@@ -20,7 +20,7 @@
 
             function ctrl(){
                 this.states = 'states--all';
-                this.candidate = 'candidate--all';
+                this.candidates = 'candidates--all';
 
 
             }

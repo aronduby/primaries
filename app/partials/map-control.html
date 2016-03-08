@@ -1,6 +1,6 @@
-<div class="map-holder" ng-class="[mcvm.states, mcvm.candidate]">
+<div class="map-holder">
 
-    <div ng-transclude></div>
+    <div class="map" ng-class="[mcvm.states, mcvm.candidates]" ng-transclude></div>
 
     <div class="map-controls">
         <section class="states">
@@ -9,10 +9,10 @@
             </header>
 
             <div class="btn-group">
-                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--all'">All</label>
-                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--democrat'">Democrat</label>
-                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--republican'">Republican</label>
-                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--swing'">Swing</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--all'" uncheckable>All</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--democrat'" uncheckable>Democrat</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--republican'" uncheckable>Republican</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--swing'" uncheckable>Swing</label>
             </div>
         </section>
         <section class="candidates">
@@ -21,9 +21,9 @@
             </header>
 
             <div class="btn-group">
-                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--all'">All</label>
-                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--clinton'">Clinton</label>
-                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--sanders'">Sanders</label>
+                <label class="btn btn-default" ng-model="mcvm.candidates" uib-btn-radio="'candidates--all'" uncheckable>All</label>
+                <label class="btn btn-default" ng-model="mcvm.candidates" uib-btn-radio="'candidates--clinton'" uncheckable>Clinton</label>
+                <label class="btn btn-default" ng-model="mcvm.candidates" uib-btn-radio="'candidates--sanders'" uncheckable>Sanders</label>
             </div>
         </section>
     </div>

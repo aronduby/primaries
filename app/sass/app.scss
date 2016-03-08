@@ -7,6 +7,11 @@ $swing-stroke: darken($swing, $darken-amount);
 
 .map {
 
+  //
+  //  Regular
+  //    states--all
+  //    candidates--all
+  //
   path {
     fill: grey;
     stroke-width: 1;
@@ -33,12 +38,61 @@ $swing-stroke: darken($swing, $darken-amount);
     }
   }
 
+  //
+  //  States
+  //
   &.states--democrat {
     path.republican,
     path.swing {
       opacity: .3;
     }
+    image.republican,
+    image.swing {
+      opacity: 0;
+    }
   }
 
+  &.states--republican {
+    path.democrat,
+    path.swing {
+      opacity: .3;
+    }
+    image.democrat,
+    image.swing {
+      opacity: 0;
+    }
+  }
+
+  &.states--swing {
+    path.democrat,
+    path.republican {
+      opacity: .3;
+    }
+    image.democrat,
+    image.republican {
+      opacity: 0;
+    }
+  }
+
+  //
+  //  Candidates
+  //
+  &.candidates--clinton {
+    path.sanders {
+      opacity: .3;
+    }
+    image.sanders {
+      opacity: 0;
+    }
+  }
+
+  &.candidates--sanders {
+    path.clinton {
+      opacity: .3;
+    }
+    image.clinton {
+      opacity: 0;
+    }
+  }
 
 }
