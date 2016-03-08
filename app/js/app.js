@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module('primaries', ['ngRoute'])
+    angular.module('primaries', ['ngRoute', 'ui.bootstrap'])
 
         .value('dataUrl', 'data.json')
         .value('styleVarsUrl', 'css/vars/_variables.json')

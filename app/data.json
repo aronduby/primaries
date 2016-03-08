@@ -1,20 +1,5 @@
 [
     {
-        "id": "HI",
-        "name": "Hawaii",
-        "abbv": "HI",
-        "electoralVotes": 4,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Hawaii",
-        "primaryDate": "2016-03-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
         "id": "WA",
         "name": "Washington",
         "abbv": "WA",
@@ -27,141 +12,10 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
-        }
-    },
-    {
-        "id": "MT",
-        "name": "Montana",
-        "abbv": "MT",
-        "electoralVotes": 3,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 92,
-        "historyUrl": "http://www.270towin.com/states/Montana",
-        "primaryDate": "2016-06-07",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "ME",
-        "name": "Maine",
-        "abbv": "ME",
-        "electoralVotes": 4,
-        "party": "democrat",
-        "winner": "sanders",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Maine",
-        "primaryDate": "2016-03-06",
-        "delegates": {
-            "clinton": 6,
-            "sanders": 14
-        }
-    },
-    {
-        "id": "ND",
-        "name": "North Dakota",
-        "abbv": "ND",
-        "electoralVotes": 3,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1940,
-        "historyUrl": "http://www.270towin.com/states/North_Dakota",
-        "primaryDate": "2016-06-07",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "SD",
-        "name": "South Dakota",
-        "abbv": "SD",
-        "electoralVotes": 3,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1936,
-        "historyUrl": "http://www.270towin.com/states/South_Dakota",
-        "primaryDate": "2016-06-14",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "WY",
-        "name": "Wyoming",
-        "abbv": "WY",
-        "electoralVotes": 3,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1948,
-        "historyUrl": "http://www.270towin.com/states/Wyoming",
-        "primaryDate": "2016-04-09",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "WI",
-        "name": "Wisconsin",
-        "abbv": "WI",
-        "electoralVotes": 10,
-        "party": "swing",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Wisconsin",
-        "primaryDate": "2016-04-05",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "ID",
-        "name": "Idaho",
-        "abbv": "ID",
-        "electoralVotes": 4,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1948,
-        "historyUrl": "http://www.270towin.com/states/Idaho",
-        "primaryDate": "2016-03-22",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "VT",
-        "name": "Vermont",
-        "abbv": "VT",
-        "electoralVotes": 3,
-        "party": "democrat",
-        "winner": "sanders",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Vermont",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 16
-        }
-    },
-    {
-        "id": "MN",
-        "name": "Minnesota",
-        "abbv": "MN",
-        "electoralVotes": 10,
-        "party": "democrat",
-        "winner": "sanders",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Minnesota",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 31,
-            "sanders": 46
+        },
+        "points": {
+            "x": 120.695,
+            "y": 2
         }
     },
     {
@@ -177,186 +31,10 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
-        }
-    },
-    {
-        "id": "NH",
-        "name": "New Hampshire",
-        "abbv": "NH",
-        "electoralVotes": 4,
-        "party": "swing",
-        "winner": "sanders",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/New_Hampshire",
-        "primaryDate": "2016-02-09",
-        "delegates": {
-            "clinton": 9,
-            "sanders": 15
-        }
-    },
-    {
-        "id": "IA",
-        "name": "Iowa",
-        "abbv": "IA",
-        "electoralVotes": 6,
-        "party": "swing",
-        "winner": "clinton",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Iowa",
-        "primaryDate": "2016-02-01",
-        "delegates": {
-            "clinton": 23,
-            "sanders": 21
-        }
-    },
-    {
-        "id": "MA",
-        "name": "Massachusetts",
-        "abbv": "MA",
-        "electoralVotes": 11,
-        "party": "democrat",
-        "winner": "clinton",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Massaschuetts",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 46,
-            "sanders": 45
-        }
-    },
-    {
-        "id": "NE",
-        "name": "Nebraska",
-        "abbv": "NE",
-        "electoralVotes": 5,
-        "party": "republican",
-        "winner": "sanders",
-        "lastDemVictory": 1936,
-        "historyUrl": "http://www.270towin.com/states/Nebraska",
-        "primaryDate": "2016-03-05",
-        "delegates": {
-            "clinton": 10,
-            "sanders": 14
-        }
-    },
-    {
-        "id": "NY",
-        "name": "New York",
-        "abbv": "NY",
-        "electoralVotes": 29,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/New_York",
-        "primaryDate": "2016-04-19",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "PA",
-        "name": "Pennsylvania",
-        "abbv": "PA",
-        "electoralVotes": 20,
-        "party": "swing",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Hawaii",
-        "primaryDate": "2016-04-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "CT",
-        "name": "Connecticut",
-        "abbv": "CT",
-        "electoralVotes": 7,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Connecticut",
-        "primaryDate": "2016-04-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "RI",
-        "name": "Rhode Island",
-        "abbv": "RI",
-        "electoralVotes": 4,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Rhode_Island",
-        "primaryDate": "2016-04-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "NJ",
-        "name": "New Jersey",
-        "abbv": "NJ",
-        "electoralVotes": 14,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/New_Jersey",
-        "primaryDate": "2016-06-07",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "IN",
-        "name": "Indiana",
-        "abbv": "IN",
-        "electoralVotes": 11,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 2008,
-        "historyUrl": "http://www.270towin.com/states/Hawaii",
-        "primaryDate": "2016-05-03",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "NV",
-        "name": "Nevada",
-        "abbv": "NV",
-        "electoralVotes": 6,
-        "party": "swing",
-        "winner": "clinton",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Nevada",
-        "primaryDate": "2016-02-20",
-        "delegates": {
-            "clinton": 20,
-            "sanders": 15
-        }
-    },
-    {
-        "id": "UT",
-        "name": "Utah",
-        "abbv": "UT",
-        "electoralVotes": 6,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1948,
-        "historyUrl": "http://www.270towin.com/states/Utah",
-        "primaryDate": "2016-03-22",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
+        },
+        "points": {
+            "x": 93.695,
+            "y": 76.984
         }
     },
     {
@@ -372,156 +50,67 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 69.695,
+            "y": 219.984
         }
     },
     {
-        "id": "OH",
-        "name": "Ohio",
-        "abbv": "OH",
-        "electoralVotes": 18,
-        "party": "swing",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Ohio",
-        "primaryDate": "2016-03-15",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "IL",
-        "name": "Illinois",
-        "abbv": "IL",
-        "electoralVotes": 20,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Hawaii",
-        "primaryDate": "2016-03-15",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "DE",
-        "name": "Delaware",
-        "abbv": "DE",
-        "electoralVotes": 3,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Hawaii",
-        "primaryDate": "2016-04-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "WV",
-        "name": "West Virginia",
-        "abbv": "WV",
-        "electoralVotes": 5,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1996,
-        "historyUrl": "http://www.270towin.com/states/West_Virgina",
-        "primaryDate": "2016-05-10",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "MD",
-        "name": "Maryland",
-        "abbv": "MD",
-        "electoralVotes": 10,
-        "party": "democrat",
-        "winner": null,
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Maryland",
-        "primaryDate": "2016-04-26",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "CO",
-        "name": "Colorado",
-        "abbv": "CO",
-        "electoralVotes": 9,
-        "party": "swing",
-        "winner": "sanders",
-        "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Colorado",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 28,
-            "sanders": 38
-        }
-    },
-    {
-        "id": "KY",
-        "name": "Kentucky",
-        "abbv": "KY",
-        "electoralVotes": 8,
-        "party": "republican",
-        "winner": null,
-        "lastDemVictory": 1996,
-        "historyUrl": "http://www.270towin.com/states/Kentucky",
-        "primaryDate": "2016-05-17",
-        "delegates": {
-            "clinton": 0,
-            "sanders": 0
-        }
-    },
-    {
-        "id": "KS",
-        "name": "Kansas",
-        "abbv": "KS",
+        "id": "NV",
+        "name": "Nevada",
+        "abbv": "NV",
         "electoralVotes": 6,
-        "party": "republican",
-        "winner": "sanders",
-        "lastDemVictory": 1936,
-        "historyUrl": "http://www.270towin.com/states/Kansas",
-        "primaryDate": "2016-03-05",
-        "delegates": {
-            "clinton": 10,
-            "sanders": 23
-        }
-    },
-    {
-        "id": "VA",
-        "name": "Virginia",
-        "abbv": "VA",
-        "electoralVotes": 13,
-        "party": "republican",
+        "party": "swing",
         "winner": "clinton",
         "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Virgina",
-        "primaryDate": "2016-03-01",
+        "historyUrl": "http://www.270towin.com/states/Nevada",
+        "primaryDate": "2016-02-20",
         "delegates": {
-            "clinton": 66,
-            "sanders": 33
+            "clinton": 20,
+            "sanders": 15
+        },
+        "points": {
+            "x": 133.43,
+            "y": 188.891
         }
     },
     {
-        "id": "MO",
-        "name": "Missouri",
-        "abbv": "MO",
-        "electoralVotes": 10,
+        "id": "ID",
+        "name": "Idaho",
+        "abbv": "ID",
+        "electoralVotes": 4,
         "party": "republican",
         "winner": null,
-        "lastDemVictory": 1996,
-        "historyUrl": "http://www.270towin.com/states/Missouri",
-        "primaryDate": "2016-03-15",
+        "lastDemVictory": 1948,
+        "historyUrl": "http://www.270towin.com/states/Idaho",
+        "primaryDate": "2016-03-22",
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 190.43,
+            "y": 99.891
+        }
+    },
+    {
+        "id": "UT",
+        "name": "Utah",
+        "abbv": "UT",
+        "electoralVotes": 6,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 1948,
+        "historyUrl": "http://www.270towin.com/states/Utah",
+        "primaryDate": "2016-03-22",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 217.521,
+            "y": 211.523
         }
     },
     {
@@ -537,66 +126,67 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 200.43,
+            "y": 313.891
         }
     },
     {
-        "id": "OK",
-        "name": "Oklahoma",
-        "abbv": "OK",
-        "electoralVotes": 7,
-        "party": "republican",
-        "winner": "sanders",
-        "lastDemVictory": 1948,
-        "historyUrl": "http://www.270towin.com/states/Oklahoma",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 21,
-            "sanders": 17
-        }
-    },
-    {
-        "id": "NC",
-        "name": "North Carolina",
-        "abbv": "NC",
-        "electoralVotes": 15,
+        "id": "MT",
+        "name": "Montana",
+        "abbv": "MT",
+        "electoralVotes": 3,
         "party": "republican",
         "winner": null,
-        "lastDemVictory": 2008,
-        "historyUrl": "http://www.270towin.com/states/North_Carolina",
-        "primaryDate": "2016-03-15",
+        "lastDemVictory": 92,
+        "historyUrl": "http://www.270towin.com/states/Montana",
+        "primaryDate": "2016-06-07",
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 263.589,
+            "y": 38.814
         }
     },
     {
-        "id": "TN",
-        "name": "Tennessee",
-        "abbv": "TN",
-        "electoralVotes": 11,
+        "id": "WY",
+        "name": "Wyoming",
+        "abbv": "WY",
+        "electoralVotes": 3,
         "party": "republican",
-        "winner": "clinton",
-        "lastDemVictory": 1996,
-        "historyUrl": "http://www.270towin.com/states/Tennessee",
-        "primaryDate": "2016-03-01",
+        "winner": null,
+        "lastDemVictory": 1948,
+        "historyUrl": "http://www.270towin.com/states/Wyoming",
+        "primaryDate": "2016-04-09",
         "delegates": {
-            "clinton": 44,
-            "sanders": 23
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 294.831,
+            "y": 137.309
         }
     },
     {
-        "id": "TX",
-        "name": "Texas",
-        "abbv": "TX",
-        "electoralVotes": 38,
-        "party": "republican",
-        "winner": "clinton",
-        "lastDemVictory": 1968,
-        "historyUrl": "http://www.270towin.com/states/Texas",
+        "id": "CO",
+        "name": "Colorado",
+        "abbv": "CO",
+        "electoralVotes": 9,
+        "party": "swing",
+        "winner": "sanders",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Colorado",
         "primaryDate": "2016-03-01",
         "delegates": {
-            "clinton": 147,
-            "sanders": 74
+            "clinton": 28,
+            "sanders": 38
+        },
+        "points": {
+            "x": 308.326,
+            "y": 228.623
         }
     },
     {
@@ -612,66 +202,181 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 295.149,
+            "y": 321.15
         }
     },
     {
-        "id": "AL",
-        "name": "Alabama",
-        "abbv": "AL",
-        "electoralVotes": 9,
-        "party": "republican",
-        "winner": "clinton",
-        "lastDemVictory": 1960,
-        "historyUrl": "http://www.270towin.com/states/Alabama",
-        "primaryDate": "2016-03-01",
-        "delegates": {
-            "clinton": 44,
-            "sanders": 9
-        }
-    },
-    {
-        "id": "MS",
-        "name": "Mississippi",
-        "abbv": "MS",
-        "electoralVotes": 6,
+        "id": "ND",
+        "name": "North Dakota",
+        "abbv": "ND",
+        "electoralVotes": 3,
         "party": "republican",
         "winner": null,
-        "lastDemVictory": 1960,
-        "historyUrl": "http://www.270towin.com/states/Mississippi",
-        "primaryDate": "2016-03-08",
+        "lastDemVictory": 1940,
+        "historyUrl": "http://www.270towin.com/states/North_Dakota",
+        "primaryDate": "2016-06-07",
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 406.149,
+            "y": 49.15
         }
     },
     {
-        "id": "GA",
-        "name": "Georgia",
-        "abbv": "GA",
-        "electoralVotes": 16,
+        "id": "SD",
+        "name": "South Dakota",
+        "abbv": "SD",
+        "electoralVotes": 3,
         "party": "republican",
-        "winner": "clinton",
-        "lastDemVictory": 1992,
-        "historyUrl": "http://www.270towin.com/states/Georgia",
+        "winner": null,
+        "lastDemVictory": 1936,
+        "historyUrl": "http://www.270towin.com/states/South_Dakota",
+        "primaryDate": "2016-06-14",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 399.808,
+            "y": 110.387
+        }
+    },
+    {
+        "id": "NE",
+        "name": "Nebraska",
+        "abbv": "NE",
+        "electoralVotes": 5,
+        "party": "republican",
+        "winner": "sanders",
+        "lastDemVictory": 1936,
+        "historyUrl": "http://www.270towin.com/states/Nebraska",
+        "primaryDate": "2016-03-05",
+        "delegates": {
+            "clinton": 10,
+            "sanders": 14
+        },
+        "points": {
+            "x": 410.7,
+            "y": 177.29
+        }
+    },
+    {
+        "id": "KS",
+        "name": "Kansas",
+        "abbv": "KS",
+        "electoralVotes": 6,
+        "party": "republican",
+        "winner": "sanders",
+        "lastDemVictory": 1936,
+        "historyUrl": "http://www.270towin.com/states/Kansas",
+        "primaryDate": "2016-03-05",
+        "delegates": {
+            "clinton": 10,
+            "sanders": 23
+        },
+        "points": {
+            "x": 428.7,
+            "y": 242.29
+        }
+    },
+    {
+        "id": "OK",
+        "name": "Oklahoma",
+        "abbv": "OK",
+        "electoralVotes": 7,
+        "party": "republican",
+        "winner": "sanders",
+        "lastDemVictory": 1948,
+        "historyUrl": "http://www.270towin.com/states/Oklahoma",
         "primaryDate": "2016-03-01",
         "delegates": {
-            "clinton": 72,
-            "sanders": 28
+            "clinton": 21,
+            "sanders": 17
+        },
+        "points": {
+            "x": 442.289,
+            "y": 311.1
         }
     },
     {
-        "id": "SC",
-        "name": "South Carolina",
-        "abbv": "SC",
-        "electoralVotes": 9,
+        "id": "TX",
+        "name": "Texas",
+        "abbv": "TX",
+        "electoralVotes": 38,
         "party": "republican",
         "winner": "clinton",
-        "lastDemVictory": 1960,
-        "historyUrl": "http://www.270towin.com/states/South_Carolina",
-        "primaryDate": "2016-02-27",
+        "lastDemVictory": 1968,
+        "historyUrl": "http://www.270towin.com/states/Texas",
+        "primaryDate": "2016-03-01",
         "delegates": {
-            "clinton": 39,
-            "sanders": 14
+            "clinton": 147,
+            "sanders": 74
+        },
+        "points": {
+            "x": 414.43,
+            "y": 392.628
+        }
+    },
+    {
+        "id": "MN",
+        "name": "Minnesota",
+        "abbv": "MN",
+        "electoralVotes": 10,
+        "party": "democrat",
+        "winner": "sanders",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Minnesota",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 31,
+            "sanders": 46
+        },
+        "points": {
+            "x": 490.7,
+            "y": 80.29
+        }
+    },
+    {
+        "id": "IA",
+        "name": "Iowa",
+        "abbv": "IA",
+        "electoralVotes": 6,
+        "party": "swing",
+        "winner": "clinton",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Iowa",
+        "primaryDate": "2016-02-01",
+        "delegates": {
+            "clinton": 23,
+            "sanders": 21
+        },
+        "points": {
+            "x": 506.43,
+            "y": 166.151
+        }
+    },
+    {
+        "id": "MO",
+        "name": "Missouri",
+        "abbv": "MO",
+        "electoralVotes": 10,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 1996,
+        "historyUrl": "http://www.270towin.com/states/Missouri",
+        "primaryDate": "2016-03-15",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 524.997,
+            "y": 239.69
         }
     },
     {
@@ -687,6 +392,29 @@
         "delegates": {
             "clinton": 22,
             "sanders": 10
+        },
+        "points": {
+            "x": 531.43,
+            "y": 321.628
+        }
+    },
+    {
+        "id": "MS",
+        "name": "Mississippi",
+        "abbv": "MS",
+        "electoralVotes": 6,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 1960,
+        "historyUrl": "http://www.270towin.com/states/Mississippi",
+        "primaryDate": "2016-03-08",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 575.43,
+            "y": 360.628
         }
     },
     {
@@ -702,21 +430,48 @@
         "delegates": {
             "clinton": 35,
             "sanders": 10
+        },
+        "points": {
+            "x": 535.43,
+            "y": 401.628
         }
     },
     {
-        "id": "FL",
-        "name": "Florida",
-        "abbv": "FL",
-        "electoralVotes": 29,
+        "id": "WI",
+        "name": "Wisconsin",
+        "abbv": "WI",
+        "electoralVotes": 10,
         "party": "swing",
         "winner": null,
         "lastDemVictory": 2012,
-        "historyUrl": "http://www.270towin.com/states/Florida",
+        "historyUrl": "http://www.270towin.com/states/Wisconsin",
+        "primaryDate": "2016-04-05",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 561.235,
+            "y": 108.862
+        }
+    },
+    {
+        "id": "IL",
+        "name": "Illinois",
+        "abbv": "IL",
+        "electoralVotes": 20,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Hawaii",
         "primaryDate": "2016-03-15",
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 579.947,
+            "y": 218.677
         }
     },
     {
@@ -732,6 +487,428 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 642.947,
+            "y": 131.677
+        }
+    },
+    {
+        "id": "OH",
+        "name": "Ohio",
+        "abbv": "OH",
+        "electoralVotes": 18,
+        "party": "swing",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Ohio",
+        "primaryDate": "2016-03-15",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 676.43,
+            "y": 186.151
+        }
+    },
+    {
+        "id": "IN",
+        "name": "Indiana",
+        "abbv": "IN",
+        "electoralVotes": 11,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 2008,
+        "historyUrl": "http://www.270towin.com/states/Hawaii",
+        "primaryDate": "2016-05-03",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 628.43,
+            "y": 203.628
+        }
+    },
+    {
+        "id": "WV",
+        "name": "West Virginia",
+        "abbv": "WV",
+        "electoralVotes": 5,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 1996,
+        "historyUrl": "http://www.270towin.com/states/West_Virgina",
+        "primaryDate": "2016-05-10",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 719.718,
+            "y": 2
+        }
+    },
+    {
+        "id": "KY",
+        "name": "Kentucky",
+        "abbv": "KY",
+        "electoralVotes": 8,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 1996,
+        "historyUrl": "http://www.270towin.com/states/Kentucky",
+        "primaryDate": "2016-05-17",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 560.243,
+            "y": 34
+        }
+    },
+    {
+        "id": "TN",
+        "name": "Tennessee",
+        "abbv": "TN",
+        "electoralVotes": 11,
+        "party": "republican",
+        "winner": "clinton",
+        "lastDemVictory": 1996,
+        "historyUrl": "http://www.270towin.com/states/Tennessee",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 44,
+            "sanders": 23
+        },
+        "points": {
+            "x": 619.855,
+            "y": 289.254
+        }
+    },
+    {
+        "id": "ME",
+        "name": "Maine",
+        "abbv": "ME",
+        "electoralVotes": 4,
+        "party": "democrat",
+        "winner": "sanders",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Maine",
+        "primaryDate": "2016-03-06",
+        "delegates": {
+            "clinton": 6,
+            "sanders": 14
+        },
+        "points": {
+            "x": 863.589,
+            "y": 34.814
+        }
+    },
+    {
+        "id": "VT",
+        "name": "Vermont",
+        "abbv": "VT",
+        "electoralVotes": 3,
+        "party": "democrat",
+        "winner": "sanders",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Vermont",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 16
+        },
+        "points": {
+            "x": 822.789,
+            "y": 79.289
+        }
+    },
+    {
+        "id": "NH",
+        "name": "New Hampshire",
+        "abbv": "NH",
+        "electoralVotes": 4,
+        "party": "swing",
+        "winner": "sanders",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/New_Hampshire",
+        "primaryDate": "2016-02-09",
+        "delegates": {
+            "clinton": 9,
+            "sanders": 15
+        },
+        "points": {
+            "x": 841.289,
+            "y": 92.438
+        }
+    },
+    {
+        "id": "MA",
+        "name": "Massachusetts",
+        "abbv": "MA",
+        "electoralVotes": 11,
+        "party": "democrat",
+        "winner": "clinton",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Massaschuetts",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 46,
+            "sanders": 45
+        },
+        "points": {
+            "x": 846.997,
+            "y": 110.69
+        }
+    },
+    {
+        "id": "RI",
+        "name": "Rhode Island",
+        "abbv": "RI",
+        "electoralVotes": 4,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Rhode_Island",
+        "primaryDate": "2016-04-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 853.876,
+            "y": 124.989
+        }
+    },
+    {
+        "id": "CT",
+        "name": "Connecticut",
+        "abbv": "CT",
+        "electoralVotes": 7,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Connecticut",
+        "primaryDate": "2016-04-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 831.876,
+            "y": 127.989
+        }
+    },
+    {
+        "id": "NY",
+        "name": "New York",
+        "abbv": "NY",
+        "electoralVotes": 29,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/New_York",
+        "primaryDate": "2016-04-19",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 781.856,
+            "y": 109.896
+        }
+    },
+    {
+        "id": "NJ",
+        "name": "New Jersey",
+        "abbv": "NJ",
+        "electoralVotes": 14,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/New_Jersey",
+        "primaryDate": "2016-06-07",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 810.789,
+            "y": 155.956
+        }
+    },
+    {
+        "id": "PA",
+        "name": "Pennsylvania",
+        "abbv": "PA",
+        "electoralVotes": 20,
+        "party": "swing",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Hawaii",
+        "primaryDate": "2016-04-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 757.895,
+            "y": 159.655
+        }
+    },
+    {
+        "id": "DE",
+        "name": "Delaware",
+        "abbv": "DE",
+        "electoralVotes": 3,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Hawaii",
+        "primaryDate": "2016-04-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 806.067,
+            "y": 195.192
+        }
+    },
+    {
+        "id": "MD",
+        "name": "Maryland",
+        "abbv": "MD",
+        "electoralVotes": 10,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Maryland",
+        "primaryDate": "2016-04-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 791.173,
+            "y": 211.916
+        }
+    },
+    {
+        "id": "VA",
+        "name": "Virginia",
+        "abbv": "VA",
+        "electoralVotes": 13,
+        "party": "republican",
+        "winner": "clinton",
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Virgina",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 66,
+            "sanders": 33
+        },
+        "points": {
+            "x": 754.688,
+            "y": 239.628
+        }
+    },
+    {
+        "id": "NC",
+        "name": "North Carolina",
+        "abbv": "NC",
+        "electoralVotes": 15,
+        "party": "republican",
+        "winner": null,
+        "lastDemVictory": 2008,
+        "historyUrl": "http://www.270towin.com/states/North_Carolina",
+        "primaryDate": "2016-03-15",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 781.43,
+            "y": 279.628
+        }
+    },
+    {
+        "id": "SC",
+        "name": "South Carolina",
+        "abbv": "SC",
+        "electoralVotes": 9,
+        "party": "republican",
+        "winner": "clinton",
+        "lastDemVictory": 1960,
+        "historyUrl": "http://www.270towin.com/states/South_Carolina",
+        "primaryDate": "2016-02-27",
+        "delegates": {
+            "clinton": 39,
+            "sanders": 14
+        },
+        "points": {
+            "x": 737.43,
+            "y": 318.628
+        }
+    },
+    {
+        "id": "GA",
+        "name": "Georgia",
+        "abbv": "GA",
+        "electoralVotes": 16,
+        "party": "republican",
+        "winner": "clinton",
+        "lastDemVictory": 1992,
+        "historyUrl": "http://www.270towin.com/states/Georgia",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 72,
+            "sanders": 28
+        },
+        "points": {
+            "x": 694.43,
+            "y": 359.628
+        }
+    },
+    {
+        "id": "AL",
+        "name": "Alabama",
+        "abbv": "AL",
+        "electoralVotes": 9,
+        "party": "republican",
+        "winner": "clinton",
+        "lastDemVictory": 1960,
+        "historyUrl": "http://www.270towin.com/states/Alabama",
+        "primaryDate": "2016-03-01",
+        "delegates": {
+            "clinton": 44,
+            "sanders": 9
+        },
+        "points": {
+            "x": 632.43,
+            "y": 360.628
+        }
+    },
+    {
+        "id": "FL",
+        "name": "Florida",
+        "abbv": "FL",
+        "electoralVotes": 29,
+        "party": "swing",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Florida",
+        "primaryDate": "2016-03-15",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 740.134,
+            "y": 446.094
         }
     },
     {
@@ -747,6 +924,29 @@
         "delegates": {
             "clinton": 0,
             "sanders": 0
+        },
+        "points": {
+            "x": 115.43,
+            "y": 441.891
+        }
+    },
+    {
+        "id": "HI",
+        "name": "Hawaii",
+        "abbv": "HI",
+        "electoralVotes": 4,
+        "party": "democrat",
+        "winner": null,
+        "lastDemVictory": 2012,
+        "historyUrl": "http://www.270towin.com/states/Hawaii",
+        "primaryDate": "2016-03-26",
+        "delegates": {
+            "clinton": 0,
+            "sanders": 0
+        },
+        "points": {
+            "x": 300.469,
+            "y": 484.746
         }
     }
 ]

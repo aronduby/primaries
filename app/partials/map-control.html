@@ -1,0 +1,31 @@
+<div class="map-holder" ng-class="[mcvm.states, mcvm.candidate]">
+
+    <div ng-transclude></div>
+
+    <div class="map-controls">
+        <section class="states">
+            <header>
+                <h1>States</h1>
+            </header>
+
+            <div class="btn-group">
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--all'">All</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--democrat'">Democrat</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--republican'">Republican</label>
+                <label class="btn btn-default" ng-model="mcvm.states" uib-btn-radio="'states--swing'">Swing</label>
+            </div>
+        </section>
+        <section class="candidates">
+            <header>
+                <h1>Candidates</h1>
+            </header>
+
+            <div class="btn-group">
+                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--all'">All</label>
+                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--clinton'">Clinton</label>
+                <label class="btn btn-default" ng-model="mcvm.candidate" uib-btn-radio="'candidate--sanders'">Sanders</label>
+            </div>
+        </section>
+    </div>
+
+</div>

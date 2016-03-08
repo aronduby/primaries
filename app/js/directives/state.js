@@ -23,17 +23,19 @@
                 if(data.winner) {
                     var svg = elm.parent().parent()[0];
                     var winnerGroup = svg.getElementById('state-winners');
-                    var point = svg.getElementById(data.id + '-Point');
-                    var xy = point.getAttribute('d').replace('M','').split(',');
-                    var img = document.createElementNS("http://www.w3.org/2000/svg", 'image');
+                    var logo = svg.getElementById(data.winner + '-logo');
+                    var clone = logo.cloneNode();
 
-                    img.setAttribute('xlink:href', '/images/' + data.winner + '.png');
-                    img.setAttribute('x', xy[0]);
-                    img.setAttribute('y', xy[1]);
-                    img.setAttribute('width', '50px');
-                    img.setAttribute('height', '50px');
+                    // illustrator registration point is center, svg top left
+                    var x = data.points.x;// + 27; // half the width
+                    var y = data.points.y - 20.75; // half the height
 
-                    winnerGroup.appendChild(img);
+                    clone.setAttribute('x', x);
+                    clone.setAttribute('y', y);
+                    clone.setAttribute('class', data.winner + ' ' +data.party);
+                    clone.removeAttribute('id');
+
+                    winnerGroup.appendChild(clone);
                 }
 
                 $compile(elm)(scope);

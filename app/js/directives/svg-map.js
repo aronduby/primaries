@@ -4,10 +4,12 @@
     angular.module('primaries')
         .directive('svgMap', ['$compile', 'StyleVariables', function($compile, style) {
             return {
-                restrict: 'EA',
+                restrict: 'E',
                 scope: {},
+                bindToController: {},
                 templateUrl: 'images/states.svg',
-                controller: ['$scope', ctrl],
+                controller: ctrl,
+                controllerAs: 'svgMapCtrl',
                 link: link
             };
 
@@ -35,7 +37,7 @@
                 });
             }
 
-            function ctrl(scope) {
+            function ctrl() {
                 this.click = function(data) {
                     console.log(data);
                 };
