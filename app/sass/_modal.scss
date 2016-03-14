@@ -1,0 +1,180 @@
+///
+/// Generic Modal Tweaks
+///
+.modal-open .modal {
+  display: flex !important;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.modal-dialog {
+  margin: 0 auto;
+  top: -4em;
+}
+
+.modal-backdrop {
+  background: $modal-backdrop-bg url(../images/modal-bg.png) 50% no-repeat;
+}
+
+.modal-header {
+  padding-bottom: .5em;
+}
+
+.modal-title {
+  line-height: 1;
+
+  icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .25em;
+  }
+
+}
+
+///
+/// Specific Styles (voted and shared)
+///
+.modal-body.voted {
+
+  .images {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    min-height: $candidate-image-width;
+
+    candidate-image img {
+      margin-left: 0;
+    }
+
+    candidate-image.winner {
+      z-index:2;
+    }
+  }
+
+  .graph {
+    z-index: 1;
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+
+  .details {
+    color: $modal-details-color;
+
+    .primary {
+      text-align: right;
+    }
+
+    .number {
+      font-size: em(40);
+      line-height: 1em;
+      margin-right: .12em;
+    }
+  }
+
+}
+
+.modal .twoseventy {
+  img {
+    width: em(40);
+    margin-right: .5em;
+  }
+}
+
+///
+/// Specific Styles not-voted states
+///
+.modal-body.not-voted {
+  text-align: center;
+  padding: 4em 0;
+  margin-bottom: 2em;
+  min-height: em(192);
+
+  &::before {
+    content: '?';
+    font-family: 'Day Poster Black', sans-serif;
+    font-size: em(192);
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    margin-left: -.25em;
+    margin-top: -.5em;
+    color: #f2f2f2;
+    z-index: 1;
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    line-height: .75em;
+
+    &.total-delegates {
+      font-size: em(33);
+      color: rgb(133,133,133);
+      font-weight: normal;
+    }
+
+    &.primary--type {
+      font-size: em(44);
+      color: rgb(128,128,128);
+    }
+
+    &.primary--date {
+      font-size: em(38);
+      color: rgb(153,153,153);
+    }
+
+
+  }
+}
+
+
+///
+/// Content Outside of the modal
+///
+.modal {
+
+  .outside-modal--bottom {
+    position: absolute;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .outside-modal--left,
+  .outside-modal--right {
+    position: absolute;
+    top: 50%;
+    margin-top: -$modal-arrow-size / 2;
+    display: block;
+    left: -$modal-arrow-margin;
+  }
+
+  .outside-modal--right {
+    left: auto;
+    right: -$modal-arrow-margin;
+  }
+
+}
+
+///
+/// State Nav in Modal
+///
+.modal {
+  .state-nav--previous {
+    @include triangle(left, #fff, $modal-arrow-size);
+  }
+
+  .state-nav--next {
+    @include triangle(right, #fff, $modal-arrow-size);
+  }
+
+  .state-nav--previous,
+  .state-nav--next {
+    opacity: $modal-arrow-opacity;
+    transition: all .5s ease;
+
+    &:hover {
+      opacity: $modal-arrow-opacity-hover;
+    }
+  }
+}

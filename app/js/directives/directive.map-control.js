@@ -19,10 +19,8 @@
             }
 
             function ctrl(){
-                this.states = 'states--all';
-                this.candidates = 'candidates--all';
-
-
+                this.party = 'party--all';
+                this.winner = 'winner--all';
             }
 
         }]);

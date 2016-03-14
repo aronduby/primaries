@@ -2,13 +2,13 @@
     'use strict';
 
     angular.module('primaries')
-        .directive('svgMap', ['$compile', 'StyleVariables', function($compile, style) {
+        .directive('svgMap', ['$compile', '$uibModal', 'StyleVariables', function($compile, $modal, style) {
             return {
                 restrict: 'E',
                 scope: {},
                 bindToController: {},
                 templateUrl: 'images/states.svg',
-                controller: ctrl,
+                controller: mapCtrl,
                 controllerAs: 'svgMapCtrl',
                 link: link
             };
@@ -37,9 +37,17 @@
                 });
             }
 
-            function ctrl() {
-                this.click = function(data) {
-                    console.log(data);
+            function mapCtrl() {
+                this.click = function(state) {
+                    $modal.open({
+                        templateUrl: 'partials/state-modal.html',
+                        controller: 'StateModalController',
+                        resolve: {
+                            state: function(){
+                                return state;
+                            }
+                        }
+                    });
                 };
             }
 

@@ -1,97 +1,36 @@
+@import 'https://fonts.googleapis.com/css?family=Play:400,700|PT+Sans+Narrow:400,700';
+@import '../css/fonts/dayposterblack/stylesheet';
+
 @import '_variables';
+@import '_mixins';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import '../../node_modules/flexboxgrid/css/flexboxgrid';
 
-$darken-amount: 10%;
-$republican-stroke: darken($republican, $darken-amount);
-$democrat-stroke: darken($democrat, $darken-amount);
-$swing-stroke: darken($swing, $darken-amount);
+@import '_icons';
+@import '_main';
+@import '_sections';
+@import '_map';
+@import '_mapControls';
+@import '_modal';
+@import '_candidateImage';
+@import '_graphs';
+@import '_headings';
 
-.map {
+// TODO - remove once other things are in
+#map {
+  min-height: 100vh;
 
-  //
-  //  Regular
-  //    states--all
-  //    candidates--all
-  //
-  path {
-    fill: grey;
-    stroke-width: 1;
-    stroke: rgba(0,0,0,.5);
-    cursor: pointer;
+  > .images {
+    padding-top: 3rem;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -30rem;
+    width:60rem;
 
-    &.swing {
-      fill: $swing;
-      stroke: $swing-stroke;
-    }
-
-    &.republican {
-      fill: $republican;
-      stroke: $republican-stroke;
-    }
-
-    &.democrat {
-      fill: $democrat;
-      stroke: $democrat-stroke;
-    }
-
-    &.not-voted {
-      opacity: .3;
-    }
-  }
-
-  //
-  //  States
-  //
-  &.states--democrat {
-    path.republican,
-    path.swing {
-      opacity: .3;
-    }
-    image.republican,
-    image.swing {
-      opacity: 0;
-    }
-  }
-
-  &.states--republican {
-    path.democrat,
-    path.swing {
-      opacity: .3;
-    }
-    image.democrat,
-    image.swing {
-      opacity: 0;
-    }
-  }
-
-  &.states--swing {
-    path.democrat,
-    path.republican {
-      opacity: .3;
-    }
-    image.democrat,
-    image.republican {
-      opacity: 0;
-    }
-  }
-
-  //
-  //  Candidates
-  //
-  &.candidates--clinton {
-    path.sanders {
-      opacity: .3;
-    }
-    image.sanders {
-      opacity: 0;
-    }
-  }
-
-  &.candidates--sanders {
-    path.clinton {
-      opacity: .3;
-    }
-    image.clinton {
-      opacity: 0;
+    img {
+      width: 20rem;
+      font-size: 20rem;
     }
   }
 

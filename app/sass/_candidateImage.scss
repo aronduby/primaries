@@ -1,0 +1,21 @@
+candidate-image {
+  position: relative;
+
+  img {
+    width: $candidate-image-width;
+    font-size: $candidate-image-width;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 .04191em $candidate-image-red,
+      0 0 0 .0598em $candidate-image-white,
+      0 0 0 .1197em $candidate-image-blue;
+    margin-left: .17em;
+    transition: all .5s ease;
+  }
+
+  &.winner img {
+    width: $candidate-image-width-winner;
+    font-size: $candidate-image-width-winner;
+  }
+}

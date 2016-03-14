@@ -1,0 +1,100 @@
+.map {
+
+  //
+  //  Regular
+  //    states--all
+  //    candidates--all
+  //
+  path {
+    fill: grey;
+    stroke-width: 1;
+    stroke: rgba(0,0,0,.5);
+    cursor: pointer;
+
+    &.swing {
+      fill: $swing;
+      stroke: $swing-stroke;
+    }
+
+    &.republican {
+      fill: $republican;
+      stroke: $republican-stroke;
+    }
+
+    &.democrat {
+      fill: $democrat;
+      stroke: $democrat-stroke;
+    }
+
+    &.not-voted {
+      opacity: .3;
+    }
+  }
+
+  image {
+    cursor: pointer;
+  }
+
+  //
+  //  States
+  //
+  &.party--democrat {
+    path.republican,
+    path.swing {
+      opacity: .3;
+    }
+    image.republican,
+    image.swing {
+      opacity: 0;
+    }
+  }
+
+  &.party--republican {
+    path.democrat,
+    path.swing {
+      opacity: .3;
+    }
+    image.democrat,
+    image.swing {
+      opacity: 0;
+    }
+  }
+
+  &.party--swing {
+    path.democrat,
+    path.republican {
+      opacity: .3;
+    }
+    image.democrat,
+    image.republican {
+      opacity: 0;
+    }
+  }
+
+  //
+  //  Candidates
+  //
+  &.winner--clinton {
+    path.sanders {
+      opacity: .3;
+    }
+    image.sanders {
+      opacity: 0;
+    }
+  }
+
+  &.winner--sanders {
+    path.clinton {
+      opacity: .3;
+    }
+    image.clinton {
+      opacity: 0;
+    }
+  }
+
+  .path,
+  image {
+    transition: opacity .25s ease;
+  }
+
+}

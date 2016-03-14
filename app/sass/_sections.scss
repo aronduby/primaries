@@ -1,0 +1,74 @@
+@mixin article($color) {
+  $type: map-get($articles, $color);
+
+  background: radial-gradient(center, circle farthest-corner, map-get($type, gradient-from), map-get($type, gradient-to) 50%);
+  color: map-get($type, text-color);
+
+  &::before {
+    opacity: map-get($type, star-opacity);
+  }
+
+  header h1 {
+    color: map-get($type, header-color);
+    text-shadow: 1px 2px 0 map-get($type, header-shadow-color);
+  }
+}
+
+
+#container > article {
+  position: relative;
+  text-align: center;
+  padding: $article-padding;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/stars.svg) 50% no-repeat;
+  }
+
+  header h1 {
+    font-family: 'Day Poster Black', sans-serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    letter-spacing: -.02em;
+
+    small {
+      font-size: .39em;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: .8em;
+      margin: auto -.3em;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  > .content {
+    position: relative;
+    z-index: 1;
+    width: $content-width;
+    margin: 0 auto;
+  }
+}
+
+article.white {
+  @include article(white);
+}
+
+article.green {
+  @include article(green);
+}
+
+article.blue {
+  @include article(blue);
+}
+
+article.red {
+  @include article(red);
+}

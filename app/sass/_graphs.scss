@@ -1,0 +1,60 @@
+.graph {
+  position: relative;
+
+  .clinton .bar {
+    @include bar-gradient($clinton-gradient-from, $clinton-gradient-to);
+  }
+
+  .sanders .bar {
+    @include bar-gradient($sanders-gradient-from, $sanders-gradient-to);
+  }
+
+  &.graph--half-marker::before {
+    content: '';
+    height: 6em;
+    border-left: 3px dotted $gray-lighter;
+    position: absolute;
+    top: -1em;
+    left:50%;
+  }
+
+  .number {
+    color: $gray;
+    font-size: 1.1428em;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: .25em;
+  }
+
+  .winner .number {
+    font-size: 1.7142em;
+    font-weight: bold;
+    color: $gray-dark;
+  }
+
+
+}
+
+.flex-bar--horiz,
+.flex-bar--vertical{
+  display: flex;
+  border-radius: $border-radius;
+
+  > div {
+    transition: all .5s ease;
+  }
+
+  .bar {
+    height: $modal-graph-height;
+  }
+
+  > div:first-child .bar {
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+  > div:last-child .bar {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+
+
+}

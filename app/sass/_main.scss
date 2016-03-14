@@ -1,0 +1,23 @@
+#svg-icons {
+  height: 0;
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+}
+
+body {
+  letter-spacing: -.04em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+
+  small {
+    color: inherit;
+    font-weight: inherit;
+  }
+}
+
+.number {
+  letter-spacing: -.08em;
+}

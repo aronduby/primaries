@@ -1,37 +1,48 @@
-(function(){
-    'use strict';
+(function() {
+  'use strict';
 
-    angular.module('primaries', ['ngRoute', 'ui.bootstrap'])
+  angular.module('primaries', ['ngRoute', 'ui.bootstrap', 'angularMoment'])
 
-        .value('dataUrl', 'data.json')
-        .value('styleVarsUrl', 'css/vars/_variables.json')
+    .value('dataUrl', 'data.json')
+    .value('styleVarsUrl', 'css/vars/_variables.json')
 
-        .config(config)
-        .controller( 'MainController', function(states){
+    .config(config)
+    .controller('MainController', function(states) {
 
-        });
+    });
 
-    config.$inject = ['$routeProvider', 'StateDataProvider', 'StyleVariablesProvider'];
-    function config($routeProvider, StateData, StyleVariables){
-        var resolve = {
-            states: function (StateData) {
-                return StateData.fetch();
-            },
-            styleVars: function(StyleVariables) {
-                return StyleVariables.fetch();
-            }
-        };
+  config.$inject = ['$routeProvider', 'StateDataProvider', 'StyleVariablesProvider', 'moment'];
+  function config($routeProvider, StateData, StyleVariables, moment) {
 
-        $routeProvider
-            .when('/', {
-                controller: 'MainController as main',
-                templateUrl: 'partials/main.html',
-                resolve: resolve
-            })
-            .otherwise({
-                redirectTo: '/'
-            });
-    }
+    moment.localeData()._calendar = {
+      sameDay: '[Today]',
+      nextDay: '[Tomorrow]',
+      nextWeek: 'dddd',
+      lastDay: '[Yesterday]',
+      lastWeek: '[Last] dddd',
+      sameElse: 'MMMM Do'
+    };
+
+
+    var resolve = {
+      states: function(StateData) {
+        return StateData.fetch();
+      },
+      styleVars: function(StyleVariables) {
+        return StyleVariables.fetch();
+      }
+    };
+
+    $routeProvider
+      .when('/', {
+        controller: 'MainController as main',
+        templateUrl: 'partials/main.html',
+        resolve: resolve
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  }
 
 
 })();
