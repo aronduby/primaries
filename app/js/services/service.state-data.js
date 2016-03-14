@@ -37,15 +37,15 @@
       };
 
       this.previous = function(id) {
-        var idx = _.findIndex(self.voted, {'id': id});
+        var idx = _.findIndex(self.states, {'id': id});
         idx--;
-        return _.get(self.voted, '[' + idx + ']', _.last(self.voted));
+        return _.get(self.states, '[' + idx + ']', _.last(self.states));
       };
 
       this.next = function(id) {
-        var idx = _.findIndex(self.voted, {'id': id});
+        var idx = _.findIndex(self.states, {'id': id});
         idx++;
-        return _.get(self.voted, '[' + idx + ']', _.first(self.voted));
+        return _.get(self.states, '[' + idx + ']', _.first(self.states));
       };
 
     });
