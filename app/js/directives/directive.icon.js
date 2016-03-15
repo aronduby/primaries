@@ -16,7 +16,6 @@
         scope.id = '#icon-' + scope.src;
 
         scope.$watch('src', function(newVal, oldVal){
-          console.log(arguments);
           scope.id = '#icon-' + newVal;
         });
 

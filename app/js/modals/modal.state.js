@@ -11,8 +11,6 @@
     smvm.previous = previous;
     smvm.next = next;
 
-    console.log(state);
-
     function previous(){
       smvm.state = StateData.previous(smvm.state.id);
     }
