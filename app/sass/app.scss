@@ -21,6 +21,7 @@
   min-height: 100vh;
 
   > .images {
+    @extend .hidden-xs;
     padding-top: 3rem;
     position:absolute;
     bottom:0;

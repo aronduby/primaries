@@ -1,10 +1,18 @@
 .map-controls {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 2em 6em 0 6em;
+  margin-top: 2em;
+
+  @media(min-width: $screen-xs-min){
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 2em 6em 0 6em;
+  }
+
 
   section {
+    + section {
+      margin-top: 2em;
+    }
 
     .btn-group {
       padding: 0 1em;

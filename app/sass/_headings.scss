@@ -5,10 +5,12 @@
 // not just a generic text-align:center so put all the necessary margin tweaks here
 //
 
-#map > .content > header h1 {
-  margin-left: 1.35em;
+@media(min-width: $screen-sm-min) {
+  #map > .content > header h1 {
+    margin-left: 1.35em;
 
-  small {
-    margin-top: -.2em;
+    small {
+      margin-top: -.2em;
+    }
   }
 }

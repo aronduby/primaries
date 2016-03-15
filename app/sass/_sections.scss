@@ -52,7 +52,7 @@
   > .content {
     position: relative;
     z-index: 1;
-    width: $content-width;
+    max-width: $content-width;
     margin: 0 auto;
   }
 }
