@@ -1,27 +1,46 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular.module('primaries')
-        .directive('mapControl', ['$compile', 'StyleVariables', function($compile, style) {
-            return {
-                restrict: 'E',
-                templateUrl: 'partials/map-control.html',
-                transclude: true,
-                scope: {},
-                bindToController: {},
-                controller: ctrl,
-                controllerAs: 'mcvm',
-                link: link
-            };
+  angular.module('primaries')
+    .directive('mapControl', function() {
+      return {
+        restrict: 'E',
+        templateUrl: 'partials/map-control.html',
+        transclude: true,
+        scope: {},
+        bindToController: {},
+        controller: ctrl,
+        controllerAs: 'mcvm',
+        link: link
+      };
 
-            function link(scope, elm, attr) {
+      function link(scope, elm, attr) {
 
-            }
+      }
+    });
 
-            function ctrl(){
-                this.party = 'party--all';
-                this.winner = 'winner--all';
-            }
+  ctrl.$inject = ['StateData'];
+  function ctrl(StateData) {
+    this.party  = null;
+    this.winner = null;
 
-        }]);
+    this.setFilters = function() {
+      var conditions = {};
+      var party = parseVal(this.party);
+      var winner = parseVal(this.winner);
+
+      if(party){ conditions.party = party; }
+      if(winner){ conditions.winner = winner; }
+
+      StateData.filter(conditions);
+    }
+  }
+
+  function parseVal(val) {
+    if(val == null) {
+      return null;
+    }
+
+    return val.split('--')[1];
+  }
 })();

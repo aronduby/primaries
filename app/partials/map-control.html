@@ -5,15 +5,15 @@
     <div class="map-controls">
         <section class="states">
             <div class="btn-group">
-                <label class="" ng-model="mcvm.party" uib-btn-radio="'party--democrat'" uncheckable>
+                <label class="" ng-model="mcvm.party" ng-click="mcvm.setFilters()" uib-btn-radio="'party--democrat'" uncheckable>
                     <icon src="'democrat'"></icon>
                     <span class="marker"></span>
                 </label>
-                <label class="" ng-model="mcvm.party" uib-btn-radio="'party--republican'" uncheckable>
+                <label class="" ng-model="mcvm.party" ng-click="mcvm.setFilters()" uib-btn-radio="'party--republican'" uncheckable>
                     <icon src="'republican'"></icon>
                     <span class="marker"></span>
                 </label>
-                <label class="" ng-model="mcvm.party" uib-btn-radio="'party--swing'" uncheckable>
+                <label class="" ng-model="mcvm.party" ng-click="mcvm.setFilters()" uib-btn-radio="'party--swing'" uncheckable>
                     <icon src="'swing'"></icon>
                     <span class="marker"></span>
                 </label>
@@ -24,11 +24,11 @@
         </section>
         <section class="candidates">
             <div class="btn-group">
-                <label class="" ng-model="mcvm.winner" uib-btn-radio="'winner--clinton'" uncheckable>
+                <label class="" ng-model="mcvm.winner" ng-click="mcvm.setFilters()" uib-btn-radio="'winner--clinton'" uncheckable>
                     <icon src="'clinton'"></icon>
                     <span class="marker"></span>
                 </label>
-                <label class="" ng-model="mcvm.winner" uib-btn-radio="'winner--sanders'" uncheckable>
+                <label class="" ng-model="mcvm.winner" ng-click="mcvm.setFilters()" uib-btn-radio="'winner--sanders'" uncheckable>
                     <icon src="'sanders'"></icon>
                     <span class="marker"></span>
                 </label>
