@@ -7,6 +7,7 @@
       self.states = null;
       self.alpha = null;
       self.voted = null;
+      self.filtered = null;
 
       this.fetch = function() {
         if(this.states) {
@@ -16,7 +17,7 @@
         return $http.get(dataUrl)
           .then(
             function success(rsp) {
-              self.states = rsp.data;
+              self.states = self.filtered = rsp.data;
               self.alpha = _.sortBy(self.states, 'name');
               self.voted = _.filter(self.states, 'winner');
 
@@ -37,16 +38,18 @@
       };
 
       this.previous = function(id) {
-        var idx = _.findIndex(self.states, {'id': id});
-        idx--;
-        return _.get(self.states, '[' + idx + ']', _.last(self.states));
+        var idx = _.findIndex(self.filtered, {'id': id});
+        return _.get(self.filtered, '[' + --idx + ']', _.last(self.filtered));
       };
 
       this.next = function(id) {
-        var idx = _.findIndex(self.states, {'id': id});
-        idx++;
-        return _.get(self.states, '[' + idx + ']', _.first(self.states));
+        var idx = _.findIndex(self.filtered, {'id': id});
+        return _.get(self.filtered, '[' + ++idx + ']', _.first(self.filtered));
       };
+
+      this.filter = function(conditions) {
+        self.filtered = _.filter(self.states, conditions);
+      }
 
     });
 
