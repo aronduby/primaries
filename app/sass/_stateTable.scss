@@ -1,0 +1,99 @@
+#container > #table {
+  padding-top: 0;
+}
+
+.state-table-holder {
+
+  .state-table {
+    display: none;
+    border-collapse: collapse;
+  }
+  .state-table--visible {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  .state-table thead {
+    th {
+      border-bottom: 2px solid lighten($gray-base, 78%);
+      padding: 2em 1em 1em 1em;
+    }
+  }
+
+  .state-table tbody {
+
+    td,
+    th {
+      border-bottom: 1px solid lighten($gray-base, 88%);
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+
+    th {
+      font-weight: normal;
+      text-align: center;
+      padding-left: .25em;
+      padding-right: .25em;
+
+      .name {
+        font-size: em(18);
+        color: $gray;
+      }
+
+      .party {
+        font-size: em(12);
+      }
+
+      .details {
+        color: lighten($gray-base, 60%);
+
+        span {
+          white-space: nowrap;
+
+          & + span {
+            margin-left: .5em;
+          }
+        }
+      }
+    }
+
+    td {
+      @extend .number;
+      font-size: em(20);
+      font-weight: bold;
+      width: 25%;
+
+      &:empty::before {
+        content: '\2014';
+        font-weight: normal;
+        color: lighten($gray-base, 80%);
+      }
+    }
+
+    td.winner {
+      color: white;
+    }
+
+    tr.republican .winner {
+      background: $republican;
+    }
+    tr.democrat .winner {
+      background: $democrat;
+    }
+    tr.swing .winner {
+      background: $swing;
+    }
+  }
+
+  .state-table tfoot {
+    th {
+      padding-top: 1em;
+    }
+  }
+
+}

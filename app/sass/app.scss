@@ -11,28 +11,29 @@
 @import '_sections';
 @import '_map';
 @import '_mapControls';
+@import '_stateTable';
 @import '_modal';
 @import '_candidateImage';
 @import '_graphs';
 @import '_headings';
 
-// TODO - remove once other things are in
-#map {
+
+#container {
   min-height: 100vh;
+  background: rgb(230,230,230);
+}
 
-  > .images {
-    @extend .hidden-xs;
-    padding-top: 3rem;
-    position:absolute;
-    bottom:0;
-    left:50%;
-    margin-left: -30rem;
-    width:60rem;
 
-    img {
-      width: 20rem;
-      font-size: 20rem;
-    }
+.button {
+  background: rgba(255,255,255,.2);
+  border: 1px solid darken($gray-lighter, 20%);
+  padding: .75em 2.5em;
+  border-radius: 1.5em;
+  text-shadow: 0 1px 0 $gray-lighter;
+  outline: none;
+  transition: all .25s ease;
+
+  &:hover {
+    background: rgba(255,255,255,.4);
   }
-
 }

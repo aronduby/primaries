@@ -1,0 +1,37 @@
+<article class="state-table-holder">
+
+    <button class="button" ng-click="stvm.toggleTable()">{{ stvm.showing ? 'Hide' : 'View' }} Table</button>
+
+    <table class="state-table" ng-class="{'state-table--visible': stvm.showing }">
+        <thead>
+            <tr>
+                <th><icon src="'clinton'"></th>
+                <th></th>
+                <th><icon src="'sanders'"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="state in stvm.states" ng-class="state.party">
+                <td class="clinton" ng-class="{'winner': state.delegates.clinton > state.delegates.sanders}">{{ state.delegates.clinton > 0 ? state.delegates.clinton : '' }}</td>
+                <th class="state">
+                    <h2 class="name">{{ state.name }}</h2>
+                    <h3 class="party">{{ state.party }}</h3>
+                    <div class="details">
+                        <span class="delegates"><span class="number">{{ state.delegates.total }}</span> delegates</span>
+                        <span class="primary--type">{{ state.primary.type }}</span>
+                        <span class="primary--date">{{ state.primary.date | amCalendar }}</span>
+                    </div>
+                </th>
+                <td class="sanders" ng-class="{'winner': state.delegates.sanders > state.delegates.clinton}">{{ state.delegates.sanders > 0 ? state.delegates.sanders : '' }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th><h2>{{ stvm.totals.clinton }}</h2></th>
+                <th>Totals</th>
+                <th><h3>{{ stvm.totals.sanders }}</h3></th>
+            </tr>
+        </tfoot>
+    </table>
+</article>
+

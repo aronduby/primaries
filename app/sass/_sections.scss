@@ -5,8 +5,27 @@
   color: map-get($type, text-color);
 
   &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(/images/stars.svg) 50% no-repeat;
     opacity: map-get($type, star-opacity);
   }
+
+  header h1 {
+    color: map-get($type, header-color);
+    text-shadow: 1px 2px 0 map-get($type, header-shadow-color);
+  }
+}
+
+@mixin article--no-frills($color) {
+  $type: map-get($articles, $color);
+
+  background: map-get($type, gradient-to);
+  color: map-get($type, text-color);
 
   header h1 {
     color: map-get($type, header-color);
@@ -19,16 +38,6 @@
   position: relative;
   text-align: center;
   padding: $article-padding;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: url(/images/stars.svg) 50% no-repeat;
-  }
 
   header h1 {
     font-family: 'Day Poster Black', sans-serif;
@@ -71,4 +80,20 @@ article.blue {
 
 article.red {
   @include article(red);
+}
+
+article.white.no-frills {
+  @include article--no-frills(white);
+}
+
+article.green.no-frills {
+  @include article--no-frills(green);
+}
+
+article.blue.no-frills {
+  @include article--no-frills(blue);
+}
+
+article.red.no-frills {
+  @include article--no-frills(red);
 }
