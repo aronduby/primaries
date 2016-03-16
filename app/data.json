@@ -442,12 +442,12 @@
     "abbv": "MO",
     "electoralVotes": 10,
     "party": "republican",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/Missouri",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 34,
+      "sanders": 34,
       "total": 84
     },
     "points": {
@@ -557,12 +557,12 @@
     "abbv": "IL",
     "electoralVotes": 20,
     "party": "democrat",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Hawaii",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 66,
+      "sanders": 64,
       "total": 182
     },
     "points": {
@@ -603,12 +603,12 @@
     "abbv": "OH",
     "electoralVotes": 18,
     "party": "swing",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Ohio",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 75,
+      "sanders": 54,
       "total": 159
     },
     "points": {
@@ -994,12 +994,12 @@
     "abbv": "NC",
     "electoralVotes": 15,
     "party": "republican",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2008,
     "historyUrl": "http://www.270towin.com/states/North_Carolina",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 59,
+      "sanders": 42,
       "total": 121
     },
     "points": {
@@ -1086,12 +1086,12 @@
     "abbv": "FL",
     "electoralVotes": 29,
     "party": "swing",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Florida",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 124,
+      "sanders": 60,
       "total": 246
     },
     "points": {
