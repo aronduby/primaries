@@ -5,6 +5,8 @@
 
     .value('dataUrl', 'data.json')
     .value('styleVarsUrl', 'css/vars/_variables.json')
+    .value('DelegatesToWin', 2383)
+    .value('ElectoralVotesToWin', 270)
 
     .config(config)
     .controller('MainController', function(states) {

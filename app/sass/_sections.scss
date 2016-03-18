@@ -34,7 +34,8 @@
 }
 
 
-#container > article {
+#container > article,
+#container > .wrapper > article{
   position: relative;
   text-align: center;
   padding: $article-padding;
@@ -64,6 +65,19 @@
     max-width: $content-width;
     margin: 0 auto;
   }
+
+  .explainer {
+    margin: 1em 0 4em 0;
+    font-size: $font-size-medium;
+  }
+
+  &.next-has-candidate-image {
+    padding-bottom: -$candidate-image-header-around;
+  }
+}
+
+#container > article:last-child {
+  padding-bottom: $article-padding * 4;
 }
 
 article.white {
@@ -82,18 +96,18 @@ article.red {
   @include article(red);
 }
 
-article.white.no-frills {
+.white.no-frills {
   @include article--no-frills(white);
 }
 
-article.green.no-frills {
+.green.no-frills {
   @include article--no-frills(green);
 }
 
-article.blue.no-frills {
+.blue.no-frills {
   @include article--no-frills(blue);
 }
 
-article.red.no-frills {
+.red.no-frills {
   @include article--no-frills(red);
 }

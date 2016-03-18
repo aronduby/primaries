@@ -69,7 +69,7 @@ gulp.task('inject', function() {
   return gulp.src('app/src.html')
     .pipe(inject(
       gulp.src(
-        ['app/js/modals/**/*.js', 'app/js/services/**/*.js', 'app/js/directives/**/*.js'],
+        ['app/js/modals/**/*.js', 'app/js/services/**/*.js', 'app/js/directives/**/*.js', 'app/js/controllers/**/*.js'],
         {read: false}
       ),
       {relative: true}

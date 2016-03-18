@@ -17,13 +17,6 @@
 @import '_graphs';
 @import '_headings';
 
-
-#container {
-  min-height: 100vh;
-  background: rgb(230,230,230);
-}
-
-
 .button {
   background: rgba(255,255,255,.2);
   border: 1px solid darken($gray-lighter, 20%);

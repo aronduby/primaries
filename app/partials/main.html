@@ -1,17 +1,42 @@
-<article id="map" class="white">
-    <div class="content">
+<div class="wrapper white no-frills">
+    <article id="map" class="white">
+        <div class="content">
+            <header>
+                <h1>Where <small><span>are</span> <span>they</span></small> Winning?</h1>
+            </header>
+
+            <map-control>
+                <svg-map></svg-map>
+            </map-control>
+
+        </div>
+    </article>
+    <article id="table" class="next-has-candidate-image">
+        <div class="content">
+            <state-table></state-table>
+        </div>
+    </article>
+</div>
+<article id="delegates" class="green">
+    <div class="content" ng-controller="DelegateController as delegates">
+        <header class="candidate-images">
+            <candidate-image key="'clinton'" name="'Hillary Clinton'"></candidate-image>
+            <candidate-image key="'sanders'" name="'Bernie Sanders'"></candidate-image>
+        </header>
         <header>
-            <h1>Where <small><span>are</span> <span>they</span></small> Winning?</h1>
+            <h1>Doing <small>the</small> Math</h1>
         </header>
 
-        <map-control>
-            <svg-map></svg-map>
-        </map-control>
+        <div class="explainer">
+            <p>It takes <strong>{{ delegates.delegatesToWin }}</strong> delegates to become the democratic nominee.
+                    Currently <strong>{{ delegates.leader == 'clinton' ? 'Hillary Clinton' : 'Bernie Sanders' }}</strong>
+                    is leading with <strong>{{ delegates[delegates.leader].total }}</strong> pledged delegates.<br />
+                This does not include potential super-delegates</p>
+        </div>
 
-    </div>
-</article>
-<article id="table" class="white no-frills">
-    <div class="content">
-        <state-table></state-table>
+        <div>
+            <graph-center-out data="delegates.data" ></graph-center-out>
+        </div>
+
     </div>
 </article>

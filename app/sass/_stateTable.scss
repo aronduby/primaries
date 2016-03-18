@@ -1,5 +1,8 @@
-#container > #table {
-  padding-top: 0;
+#container > #table,
+#container .wrapper > #table{
+  top: -6em;
+  color: map_get(map_get($articles, white), text-color);
+  padding-bottom: -$candidate-image-header-around / 2;
 }
 
 .state-table-holder {
@@ -12,6 +15,7 @@
     display: table;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: $candidate-image-header-around / 4;
   }
 
   th {

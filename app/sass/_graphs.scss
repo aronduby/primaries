@@ -1,6 +1,16 @@
 .graph {
   position: relative;
 
+  > div {
+    transition: all .5s ease;
+  }
+
+  .bar {
+    height: $graph-bar-height;
+    border-radius: $border-radius;
+  }
+
+
   .clinton .bar {
     @include bar-gradient($clinton-gradient-from, $clinton-gradient-to);
   }
@@ -12,14 +22,14 @@
   &.graph--half-marker::before {
     content: '';
     height: 6em;
-    border-left: 3px dotted $gray-lighter;
+    border-left: 4px dotted $gray-lighter;
     position: absolute;
     top: -1em;
-    left:50%;
+    left: 50%;
+    margin-left: -2px;
   }
 
   .number {
-    color: $gray;
     font-size: 1.1428em;
     line-height: 1.5rem;
     text-align: center;
@@ -32,21 +42,12 @@
     color: $gray-dark;
   }
 
-
 }
 
 .flex-bar--horiz,
 .flex-bar--vertical{
   display: flex;
   border-radius: $border-radius;
-
-  > div {
-    transition: all .5s ease;
-  }
-
-  .bar {
-    height: $modal-graph-height;
-  }
 
   > div:first-child .bar {
     border-radius: $border-radius 0 0 $border-radius;
@@ -55,6 +56,112 @@
   > div:last-child .bar {
     border-radius: 0 $border-radius $border-radius 0;
   }
+}
 
+
+
+
+.graph--center-out {
+  @include clearfix;
+  background: rgba(255,255,255,.2);
+  border-radius: $border-radius;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  .left,
+  .right {
+    height: $graph-bar-height - .5em;
+    width: 50%;
+    float: left;
+    align-items: center;
+
+    .bar {
+      height: $graph-bar-height + .5em;
+    }
+  }
+
+  .number {
+    margin-top: 0;
+  }
+
+  .total {
+    font-size: em(16);
+    font-weight: bold;
+    color: rgba(255,255,255,.75);
+    position: absolute;
+    top: 50%;
+    margin-top: - em(8);
+  }
+
+  .value {
+    position: relative;
+    font-size: em(29);
+    height: 100%;
+
+    .inner {
+      position: absolute;
+      top: 50%;
+      margin-top: -.25em;
+      white-space: nowrap;
+    }
+
+    .percent {
+      font-size: .6em;
+      letter-spacing: -.04em;
+      opacity: .6;
+      vertical-align: middle;
+    }
+  }
+
+  .gt80 {
+    .value .inner {
+      top: 100%;
+      margin: .25em 0 0 0;
+      white-space: normal;
+
+
+      .percent {
+        display: block;
+        margin-top: .4em;
+      }
+    }
+
+    &.left .inner {
+      direction: ltr;
+      left: 0;
+    }
+
+    &.right .inner {
+      right: 0;
+    }
+  }
+
+  .left {
+    justify-content: flex-end;
+
+    .inner {
+      direction: rtl;
+      right: 0;
+      margin-right: $graph-bar-spacing;
+    }
+
+    .total {
+      left: -$graph-outside;
+      text-align: left;
+    }
+  }
+
+  .right {
+    .inner {
+      margin-left: $graph-bar-spacing;
+    }
+
+    .total {
+      left: auto;
+      right: -$graph-outside;
+      text-align: right;
+    }
+  }
 
 }
