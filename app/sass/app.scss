@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Play:400,700|PT+Sans+Narrow:400,700';
 @import '../css/fonts/dayposterblack/stylesheet';
+@import '../css/fonts/ptstatesnarrow/stylesheet';
 
 @import '_variables';
 @import '_mixins';
@@ -16,6 +17,7 @@
 @import '_candidateImage';
 @import '_graphs';
 @import '_headings';
+@import '_outstanding';
 
 .button {
   background: rgba(255,255,255,.2);

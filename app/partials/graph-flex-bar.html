@@ -1,0 +1,10 @@
+<div class="graph flex-bar--horiz">
+    <div ng-repeat="data in graph.data"
+         class="bar {{ data.classes }}"
+         style="flex: {{ data.value }}"
+         ng-click="graph.clicked(data)"
+         title="{{ data.title }}"
+    >
+        <div ng-if="data.compiled" class="flex-bar-content" ng-bind-html="data.compiled"></div>
+    </div>
+</div>

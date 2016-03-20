@@ -1,5 +1,8 @@
 .graph {
   position: relative;
+  margin-top: $article-padding * 2;
+  margin-bottom: $article-padding * 2;
+  background: rgba(255,255,255,.2);
 
   > div {
     transition: all .5s ease;
@@ -7,7 +10,6 @@
 
   .bar {
     height: $graph-bar-height;
-    border-radius: $border-radius;
   }
 
 
@@ -45,21 +47,22 @@
 }
 
 .flex-bar--horiz,
+.flex-bar--horizontal,
+.flex-bar--vert,
 .flex-bar--vertical{
   display: flex;
   border-radius: $border-radius;
 
-  > div:first-child .bar {
+  > div:first-child .bar,
+  > div.bar:first-child {
     border-radius: $border-radius 0 0 $border-radius;
   }
 
-  > div:last-child .bar {
+  > div:last-child .bar,
+  > div.bar:last-child {
     border-radius: 0 $border-radius $border-radius 0;
   }
 }
-
-
-
 
 .graph--center-out {
   @include clearfix;
@@ -68,6 +71,7 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: $article-padding * 2;
 
   .left,
   .right {
@@ -164,4 +168,8 @@
     }
   }
 
+}
+
+graph-flex-bar[click] .bar {
+  cursor: pointer;
 }

@@ -17,6 +17,7 @@
         </div>
     </article>
 </div>
+
 <article id="delegates" class="green">
     <div class="content" ng-controller="DelegateController as delegates">
         <header class="candidate-images">
@@ -37,6 +38,36 @@
         <div>
             <graph-center-out data="delegates.data" ></graph-center-out>
         </div>
+
+    </div>
+</article>
+
+<article id="outstanding" class="blue">
+    <div class="content" ng-controller="OutstandingController as out">
+        <header>
+            <h1>Yet <small>to</small> Vote</h1>
+        </header>
+
+        <graph-flex-bar
+            orientation="horizontal"
+            data="out.graphData"
+            tmpl="'outstanding-graph-content.html'"
+            click="out.click(data)"
+        ></graph-flex-bar>
+
+        <section class="totals">
+            <header>
+                <h1>{{ out.total | number }}</h1>
+                <h2>Delegates Remaining</h2>
+            </header>
+        </section>
+
+        <script type="text/ng-template" id="outstanding-graph-content.html">
+            <div class="state-data">
+                <h4 class="state-data-abbv" data-title="{{ name }}">{{ abbv }}</h4>
+                <h5 class="state-data-total">{{ delegates.total }}</h5>
+            </div>
+        </script>
 
     </div>
 </article>

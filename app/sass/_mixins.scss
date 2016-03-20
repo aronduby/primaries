@@ -1,4 +1,5 @@
 /// bar-gradient
+/// -----------------------------------------------
 /// creates gradient with color stops at 50% to create a hard split
 /// @param {Color} $from - the start color
 /// @param {Color} $to - the end color
@@ -7,6 +8,7 @@
 }
 
 /// px to em conversion
+/// -----------------------------------------------
 /// @param {Number} $pixels - the pixel size we are converting
 /// @param {Number} $content [$font-size-base] - the content for figuring out the em
 ///   defaults to the bootstrap font size base
@@ -24,6 +26,7 @@
 
 
 /// Triangle helper
+/// -----------------------------------------------
 /// @param {Direction} $direction - Triangle direction, either `top`, `right`, `bottom` or `left`
 /// @param {Color} $color [currentcolor] - Triangle color
 /// @param {Length} $size [1em] - Triangle size
@@ -49,6 +52,8 @@
   }
 }
 
+/// opposite-direction
+/// -----------------------------------------------
 /// Returns the opposite direction of each direction in a list
 /// @author Hugo Giraudel
 /// @param {List} $directions - List of initial directions
@@ -76,4 +81,12 @@
   }
 
   @return $opposite-directions;
+}
+
+
+/// state-font
+/// -----------------------------------------------
+/// sets the font to be the state ligatures font
+@mixin state-font() {
+  font-family: 'PT States Narrow', $font-family-sans-serif;
 }

@@ -3,7 +3,7 @@
         <div class="total number">{{ graph.data.total }}</div>
         <div class="value number">
             <div class="inner">
-                <span class="inner-total">{{ graph.data.left.total }}</span>
+                <span class="inner-total">{{ graph.data.left.total | number }}</span>
                 <span class="percent">{{ graph.data.left.percent }}%</span>
             </div>
         </div>
@@ -13,7 +13,7 @@
         <div class="bar" style="width: {{graph.data.right.percent}}%"></div>
         <div class="value number">
             <div class="inner">
-                <span class="inner-total">{{ graph.data.right.total }}</span>
+                <span class="inner-total">{{ graph.data.right.total | number }}</span>
                 <span class="percent">{{ graph.data.right.percent }}%</span>
             </div>
         </div>
