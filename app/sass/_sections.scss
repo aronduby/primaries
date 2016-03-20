@@ -72,7 +72,11 @@
   }
 
   &.next-has-candidate-image {
-    padding-bottom: -$candidate-image-header-around;
+    padding-bottom: -$candidate-image-header-around * 1.2;
+
+    @media (min-width: $screen-sm-min) {
+      padding-bottom: -$candidate-image-header-around;
+    }
   }
 }
 

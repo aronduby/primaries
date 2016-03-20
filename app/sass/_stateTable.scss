@@ -1,8 +1,12 @@
 #container > #table,
 #container .wrapper > #table{
-  top: -6em;
   color: map_get(map_get($articles, white), text-color);
-  padding-bottom: -$candidate-image-header-around / 2;
+  padding-bottom: -$candidate-image-header-around;
+
+  @media (min-width: $screen-sm-min) {
+    top: -6em;
+    padding-bottom: -$candidate-image-header-around / 2;
+  }
 }
 
 .state-table-holder {
