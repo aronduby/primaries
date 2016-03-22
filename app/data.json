@@ -88,8 +88,9 @@
     },
     "primary": {
       "type": "caucus-closed",
-      "date": "2016-02-20"
-    }
+      "date": "2016-2-20"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/nevada"
   },
   {
     "id": "ID",
@@ -226,8 +227,9 @@
     },
     "primary": {
       "type": "caucus-closed",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/colorado"
   },
   {
     "id": "NM",
@@ -309,8 +311,8 @@
     "historyUrl": "http://www.270towin.com/states/Nebraska",
     "delegates": {
       "clinton": 10,
-      "sanders": 14,
-      "total": 24
+      "sanders": 15,
+      "total": 25
     },
     "points": {
       "x": 410.7,
@@ -318,8 +320,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-05"
-    }
+      "date": "2016-3-5"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/nebraska"
   },
   {
     "id": "KS",
@@ -331,8 +334,8 @@
     "lastDemVictory": 1936,
     "historyUrl": "http://www.270towin.com/states/Kansas",
     "delegates": {
-      "clinton": 10,
-      "sanders": 23,
+      "clinton": 9,
+      "sanders": 24,
       "total": 33
     },
     "points": {
@@ -341,8 +344,9 @@
     },
     "primary": {
       "type": "caucus-closed",
-      "date": "2016-03-05"
-    }
+      "date": "2016-3-5"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/kansas"
   },
   {
     "id": "OK",
@@ -364,8 +368,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/oklahoma"
   },
   {
     "id": "TX",
@@ -378,8 +383,8 @@
     "historyUrl": "http://www.270towin.com/states/Texas",
     "delegates": {
       "clinton": 147,
-      "sanders": 74,
-      "total": 221
+      "sanders": 75,
+      "total": 222
     },
     "points": {
       "x": 414.43,
@@ -387,8 +392,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/texas"
   },
   {
     "id": "MN",
@@ -410,8 +416,9 @@
     },
     "primary": {
       "type": "caucus-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/minnesota"
   },
   {
     "id": "IA",
@@ -433,8 +440,9 @@
     },
     "primary": {
       "type": "caucus-semi",
-      "date": "2016-02-01"
-    }
+      "date": "2016-2-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/iowa"
   },
   {
     "id": "MO",
@@ -446,9 +454,9 @@
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/Missouri",
     "delegates": {
-      "clinton": 32,
-      "sanders": 32,
-      "total": 64
+      "clinton": 34,
+      "sanders": 34,
+      "total": 68
     },
     "points": {
       "x": 524.997,
@@ -456,8 +464,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-15"
-    }
+      "date": "2016-3-15"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/missouri"
   },
   {
     "id": "AR",
@@ -479,8 +488,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/arkansas"
   },
   {
     "id": "MS",
@@ -492,9 +502,9 @@
     "lastDemVictory": 1960,
     "historyUrl": "http://www.270towin.com/states/Mississippi",
     "delegates": {
-      "clinton": 29,
+      "clinton": 32,
       "sanders": 4,
-      "total": 33
+      "total": 36
     },
     "points": {
       "x": 575.43,
@@ -502,8 +512,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-08"
-    }
+      "date": "2016-3-8"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/mississippi"
   },
   {
     "id": "LA",
@@ -515,9 +526,9 @@
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/Louisiana",
     "delegates": {
-      "clinton": 35,
-      "sanders": 10,
-      "total": 45
+      "clinton": 37,
+      "sanders": 14,
+      "total": 51
     },
     "points": {
       "x": 535.43,
@@ -525,8 +536,9 @@
     },
     "primary": {
       "type": "primary-closed",
-      "date": "2016-03-05"
-    }
+      "date": "2016-3-5"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/louisiana"
   },
   {
     "id": "WI",
@@ -561,9 +573,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Hawaii",
     "delegates": {
-      "clinton": 68,
-      "sanders": 67,
-      "total": 135
+      "clinton": 76,
+      "sanders": 73,
+      "total": 149
     },
     "points": {
       "x": 579.947,
@@ -571,8 +583,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-15"
-    }
+      "date": "2016-3-15"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/illinois"
   },
   {
     "id": "MI",
@@ -584,9 +597,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Michigan",
     "delegates": {
-      "clinton": 58,
-      "sanders": 65,
-      "total": 123
+      "clinton": 63,
+      "sanders": 67,
+      "total": 130
     },
     "points": {
       "x": 642.947,
@@ -594,8 +607,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-08"
-    }
+      "date": "2016-3-8"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/michigan"
   },
   {
     "id": "OH",
@@ -607,9 +621,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Ohio",
     "delegates": {
-      "clinton": 79,
+      "clinton": 81,
       "sanders": 62,
-      "total": 141
+      "total": 143
     },
     "points": {
       "x": 676.43,
@@ -617,8 +631,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-15"
-    }
+      "date": "2016-3-15"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/ohio"
   },
   {
     "id": "IN",
@@ -709,8 +724,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/tennessee"
   },
   {
     "id": "ME",
@@ -722,9 +738,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Maine",
     "delegates": {
-      "clinton": 6,
-      "sanders": 14,
-      "total": 20
+      "clinton": 9,
+      "sanders": 16,
+      "total": 25
     },
     "points": {
       "x": 863.589,
@@ -732,8 +748,9 @@
     },
     "primary": {
       "type": "caucus-closed",
-      "date": "2016-03-06"
-    }
+      "date": "2016-3-6"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/maine"
   },
   {
     "id": "VT",
@@ -755,8 +772,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/vermont"
   },
   {
     "id": "NH",
@@ -778,8 +796,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-02-09"
-    }
+      "date": "2016-2-9"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/new-hampshire"
   },
   {
     "id": "MA",
@@ -801,8 +820,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/massachusetts"
   },
   {
     "id": "RI",
@@ -975,9 +995,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Virgina",
     "delegates": {
-      "clinton": 66,
+      "clinton": 62,
       "sanders": 33,
-      "total": 99
+      "total": 95
     },
     "points": {
       "x": 754.688,
@@ -985,8 +1005,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/virginia"
   },
   {
     "id": "NC",
@@ -1008,8 +1029,9 @@
     },
     "primary": {
       "type": "primary-semi",
-      "date": "2016-03-15"
-    }
+      "date": "2016-3-15"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/north-carolina"
   },
   {
     "id": "SC",
@@ -1031,8 +1053,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-02-27"
-    }
+      "date": "2016-2-27"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/south-carolina"
   },
   {
     "id": "GA",
@@ -1044,9 +1067,9 @@
     "lastDemVictory": 1992,
     "historyUrl": "http://www.270towin.com/states/Georgia",
     "delegates": {
-      "clinton": 72,
-      "sanders": 28,
-      "total": 100
+      "clinton": 73,
+      "sanders": 29,
+      "total": 102
     },
     "points": {
       "x": 694.43,
@@ -1054,8 +1077,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/georgia"
   },
   {
     "id": "AL",
@@ -1077,8 +1101,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-01"
-    }
+      "date": "2016-3-1"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/alabama"
   },
   {
     "id": "FL",
@@ -1090,9 +1115,9 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Florida",
     "delegates": {
-      "clinton": 133,
-      "sanders": 65,
-      "total": 198
+      "clinton": 136,
+      "sanders": 67,
+      "total": 203
     },
     "points": {
       "x": 740.134,
@@ -1100,8 +1125,9 @@
     },
     "primary": {
       "type": "primary-closed",
-      "date": "2016-03-15"
-    }
+      "date": "2016-3-15"
+    },
+    "resultsLink": "http://www.nytimes.com/elections/results/florida"
   },
   {
     "id": "AK",
