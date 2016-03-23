@@ -24,11 +24,11 @@
       swing: _(this.states).filter({'party': 'swing'}).sumBy('delegates.total')
     };
 
-    // top 3
-    this.largest = _(this.states)
-      .orderBy('delegates.total', 'desc')
-      .take(3)
-      .value();
+    this.percents = {
+      democrat: (this.totals.democrat / this.total) * 100,
+      republican: (this.totals.republican / this.total) * 100,
+      swing: (this.totals.swing / this.total) * 100
+    };
 
     // format data for the graph
     this.graphData = _.map(this.states, function(state){

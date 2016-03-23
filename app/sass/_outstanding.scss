@@ -73,14 +73,54 @@
   .totals{
 
     h1 {
-      font-size:70px;
-      letter-spacing: -.06em;
+      font-size: em(60);
     }
 
     h2 {
       font-size: 25px;
       opacity: .6;
       font-weight: normal;
+    }
+  }
+
+  .breakdown {
+    margin-top: -1em;
+    position: relative;
+
+    section {
+      box-sizing: content-box;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+      border-style: solid;
+
+      &.democrat {
+        background-color: $democrat;
+        border-color: $democrat;
+      }
+
+      &.republican {
+        background-color: $republican;
+        border-color: $republican;
+      }
+
+      &.swing {
+        background-color: $swing;
+        border-color: $swing;
+      }
+
+      .breakdown-total {
+        font-size: em(24);
+        line-height: .9em;
+      }
+
+      .breakdown-percent {
+        font-size: 1em;
+        opacity: .8;
+      }
     }
   }
 }

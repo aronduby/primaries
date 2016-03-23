@@ -57,10 +57,33 @@
 
         <section class="totals">
             <header>
-                <h1>{{ out.total | number }}</h1>
+                <h1 class="number">{{ out.total | number }}</h1>
                 <h2>Delegates Remaining</h2>
             </header>
         </section>
+
+        <div class="breakdown">
+            <section class="democrat number" title="Democrat" ng-style="{'border-width': (out.totals.democrat / out.total) * 3 + 'em' }">
+                <div>
+                    <h3 class="breakdown-total">{{ out.totals.democrat | number }}</h3>
+                    <h4 class="breakdown-percent">{{ (out.totals.democrat / out.total) * 100 | number:0 }}%</h4>
+                </div>
+            </section>
+
+            <section class="swing number" title="Swing" ng-style="{'border-width': (out.totals.swing / out.total) * 3 + 'em' }">
+                <div>
+                    <h3 class="breakdown-total">{{ out.totals.swing | number }}</h3>
+                    <h4 class="breakdown-percent">{{ (out.totals.swing / out.total) * 100 | number:0 }}%</h4>
+                </div>
+            </section>
+
+            <section class="republican number" title="Republican" ng-style="{'border-width': (out.totals.republican / out.total) * 3 + 'em' }">
+                <div>
+                    <h3 class="breakdown-total">{{ out.totals.republican | number }}</h3>
+                    <h4 class="breakdown-percent">{{ (out.totals.republican / out.total) * 100 | number:0 }}%</h4>
+                </div>
+            </section>
+        </div>
 
         <script type="text/ng-template" id="outstanding-graph-content.html">
             <div class="state-data">
