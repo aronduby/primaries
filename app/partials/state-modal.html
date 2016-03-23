@@ -38,10 +38,12 @@
     <p class="primary--date">{{ smvm.state.primary.date | amCalendar }}</p>
 </div>
 
-<footer class="outside-modal--bottom">
-    <a class="twoseventy" ng-href="{{ smvm.state.historyUrl }}" target="_blank">
+<footer class="outside-modal--bottom modal-links">
+    <a class="twoseventy" ng-href="{{ smvm.state.historyUrl }}" target="_blank" title="Past Election Data on 270ToWin.com">
         <img src="images/270toWin-icon.png" alt="270toWin state voting history" />
-        past election data on 270ToWin.com
+    </a>
+    <a ng-if="smvm.state.resultsUrl" ng-href="{{ smvm.state.resultsUrl }}" target="_blank" title="Results Breakdown on New York Times">
+        <icon src="'nyt'"></icon>
     </a>
 </footer>
 

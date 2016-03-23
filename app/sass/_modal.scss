@@ -77,10 +77,26 @@
 
 }
 
-.modal .twoseventy {
-  img {
-    width: em(40);
-    margin-right: .5em;
+///
+/// Footer Links
+///
+.modal-links {
+  a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .25em;
+    opacity: .75;
+    transition: all .5s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img,
+    svg {
+      display: block;
+      height: 38px;
+    }
   }
 }
 

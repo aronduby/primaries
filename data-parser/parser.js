@@ -18,7 +18,7 @@ q.all([src, data])
         var state = statesByName[d.name];
 
         state.primary.date = d.date;
-        state.resultsLink = d.link;
+        state.resultsUrl = d.link;
         state.delegates.clinton = d.clinton;
         state.delegates.sanders = d.sanders;
         state.delegates.total = d.total;

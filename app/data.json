@@ -90,7 +90,7 @@
       "type": "caucus-closed",
       "date": "2016-2-20"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/nevada"
+    "resultsUrl": "http://www.nytimes.com/elections/results/nevada"
   },
   {
     "id": "ID",
@@ -229,7 +229,7 @@
       "type": "caucus-closed",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/colorado"
+    "resultsUrl": "http://www.nytimes.com/elections/results/colorado"
   },
   {
     "id": "NM",
@@ -322,7 +322,7 @@
       "type": "primary-semi",
       "date": "2016-3-5"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/nebraska"
+    "resultsUrl": "http://www.nytimes.com/elections/results/nebraska"
   },
   {
     "id": "KS",
@@ -346,7 +346,7 @@
       "type": "caucus-closed",
       "date": "2016-3-5"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/kansas"
+    "resultsUrl": "http://www.nytimes.com/elections/results/kansas"
   },
   {
     "id": "OK",
@@ -370,7 +370,7 @@
       "type": "primary-semi",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/oklahoma"
+    "resultsUrl": "http://www.nytimes.com/elections/results/oklahoma"
   },
   {
     "id": "TX",
@@ -394,7 +394,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/texas"
+    "resultsUrl": "http://www.nytimes.com/elections/results/texas"
   },
   {
     "id": "MN",
@@ -418,7 +418,7 @@
       "type": "caucus-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/minnesota"
+    "resultsUrl": "http://www.nytimes.com/elections/results/minnesota"
   },
   {
     "id": "IA",
@@ -442,7 +442,7 @@
       "type": "caucus-semi",
       "date": "2016-2-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/iowa"
+    "resultsUrl": "http://www.nytimes.com/elections/results/iowa"
   },
   {
     "id": "MO",
@@ -466,7 +466,7 @@
       "type": "primary-open",
       "date": "2016-3-15"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/missouri"
+    "resultsUrl": "http://www.nytimes.com/elections/results/missouri"
   },
   {
     "id": "AR",
@@ -490,7 +490,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/arkansas"
+    "resultsUrl": "http://www.nytimes.com/elections/results/arkansas"
   },
   {
     "id": "MS",
@@ -514,7 +514,7 @@
       "type": "primary-open",
       "date": "2016-3-8"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/mississippi"
+    "resultsUrl": "http://www.nytimes.com/elections/results/mississippi"
   },
   {
     "id": "LA",
@@ -538,7 +538,7 @@
       "type": "primary-closed",
       "date": "2016-3-5"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/louisiana"
+    "resultsUrl": "http://www.nytimes.com/elections/results/louisiana"
   },
   {
     "id": "WI",
@@ -585,7 +585,7 @@
       "type": "primary-open",
       "date": "2016-3-15"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/illinois"
+    "resultsUrl": "http://www.nytimes.com/elections/results/illinois"
   },
   {
     "id": "MI",
@@ -609,7 +609,7 @@
       "type": "primary-open",
       "date": "2016-3-8"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/michigan"
+    "resultsUrl": "http://www.nytimes.com/elections/results/michigan"
   },
   {
     "id": "OH",
@@ -633,7 +633,7 @@
       "type": "primary-semi",
       "date": "2016-3-15"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/ohio"
+    "resultsUrl": "http://www.nytimes.com/elections/results/ohio"
   },
   {
     "id": "IN",
@@ -726,7 +726,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/tennessee"
+    "resultsUrl": "http://www.nytimes.com/elections/results/tennessee"
   },
   {
     "id": "ME",
@@ -750,7 +750,7 @@
       "type": "caucus-closed",
       "date": "2016-3-6"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/maine"
+    "resultsUrl": "http://www.nytimes.com/elections/results/maine"
   },
   {
     "id": "VT",
@@ -774,7 +774,7 @@
       "type": "primary-semi",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/vermont"
+    "resultsUrl": "http://www.nytimes.com/elections/results/vermont"
   },
   {
     "id": "NH",
@@ -798,7 +798,7 @@
       "type": "primary-open",
       "date": "2016-2-9"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/new-hampshire"
+    "resultsUrl": "http://www.nytimes.com/elections/results/new-hampshire"
   },
   {
     "id": "MA",
@@ -822,7 +822,7 @@
       "type": "primary-semi",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/massachusetts"
+    "resultsUrl": "http://www.nytimes.com/elections/results/massachusetts"
   },
   {
     "id": "RI",
@@ -1007,7 +1007,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/virginia"
+    "resultsUrl": "http://www.nytimes.com/elections/results/virginia"
   },
   {
     "id": "NC",
@@ -1031,7 +1031,7 @@
       "type": "primary-semi",
       "date": "2016-3-15"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/north-carolina"
+    "resultsUrl": "http://www.nytimes.com/elections/results/north-carolina"
   },
   {
     "id": "SC",
@@ -1055,7 +1055,7 @@
       "type": "primary-open",
       "date": "2016-2-27"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/south-carolina"
+    "resultsUrl": "http://www.nytimes.com/elections/results/south-carolina"
   },
   {
     "id": "GA",
@@ -1079,7 +1079,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/georgia"
+    "resultsUrl": "http://www.nytimes.com/elections/results/georgia"
   },
   {
     "id": "AL",
@@ -1103,7 +1103,7 @@
       "type": "primary-open",
       "date": "2016-3-1"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/alabama"
+    "resultsUrl": "http://www.nytimes.com/elections/results/alabama"
   },
   {
     "id": "FL",
@@ -1127,7 +1127,7 @@
       "type": "primary-closed",
       "date": "2016-3-15"
     },
-    "resultsLink": "http://www.nytimes.com/elections/results/florida"
+    "resultsUrl": "http://www.nytimes.com/elections/results/florida"
   },
   {
     "id": "AK",
