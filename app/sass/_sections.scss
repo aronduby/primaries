@@ -80,8 +80,8 @@
   }
 }
 
-#container > article:last-child {
-  padding-bottom: $article-padding * 4;
+#container > article:last-of-type {
+  padding-bottom: $article-padding * 2;
 }
 
 article.white {
@@ -114,4 +114,24 @@ article.red {
 
 .red.no-frills {
   @include article--no-frills(red);
+}
+
+
+#container > footer {
+  @include article(footer);
+  position: relative;
+  padding: $article-padding * 2;
+  box-shadow: inset 0 0 1em rgba(0,0,0,.8);
+
+  .icon,
+  img {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    margin: 0 .25em;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
 }

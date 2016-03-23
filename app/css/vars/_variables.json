@@ -19,6 +19,7 @@
 	"article-padding": "2em",
 	"content-width": "1024px",
 	"border-radius": "2px",
+	"black": "#000",
 	"candidate-header-multiplier": "1.3",
 	"candidate-image-width": "15rem",
 	"candidate-image-width-winner": "18rem",

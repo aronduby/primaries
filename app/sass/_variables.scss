@@ -24,6 +24,8 @@ $article-padding: 2em;
 $content-width: 1024px;
 $border-radius: 2px;
 
+$black: #000;
+
 $articles: (
   white: (
     gradient-from: rgb(124,124,124),
@@ -56,6 +58,14 @@ $articles: (
     header-color: #ffffff,
     header-shadow-color: #6B0000,
     text-color: #EDF5F9,
+  ),
+  footer: (
+    gradient-from: lighten($black, 13.5%),
+    gradient-to: lighten($black, 20%),
+    star-opacity: .05,
+    header-color: #ffffff,
+    header-shadow-color: #aaa,
+    text-color: lighten($black, 46.7%),
   )
 );
 
