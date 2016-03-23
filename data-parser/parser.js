@@ -1,7 +1,8 @@
-var xray = require('x-ray');
-var fs   = require('fs');
-var q    = require('q');
-var _    = require('lodash');
+var xray  = require('x-ray');
+var fs    = require('fs');
+var q     = require('q');
+var debug = require('debug');
+var _     = require('lodash');
 
 var srcPath  = './src.html';
 var dataPath = '../app/data.json';
@@ -11,25 +12,31 @@ var data = parseData(dataPath);
 
 q.all([src, data])
   .spread(function(src, data) {
+    var combineDebug = debug('parser:combine');
     var statesByName = _.keyBy(data, 'name');
 
+    // combineDebug('statesByName: ', statesByName);
+
     src.forEach(function(d) {
-      if(_.has(statesByName, d.name)){
+      if(_.has(statesByName, d.name)) {
         var state = statesByName[d.name];
 
-        state.primary.date = d.date;
-        state.resultsUrl = d.link;
+        state.primary.date      = d.date;
+        state.resultsUrl   = d.link;
         state.delegates.clinton = d.clinton;
         state.delegates.sanders = d.sanders;
-        state.delegates.total = d.total;
+        state.delegates.total   = d.total;
+
+        combineDebug('set state to: ', state);
 
       } else {
-        console.log('Could not find "' + d.name + '" in data file');
+        combineDebug('Could not find "' + d.name + '" in data file');
       }
     });
 
+    combineDebug('writing to file');
     fs.writeFile(dataPath, JSON.stringify(data, null, '  '));
-    console.log('done');
+    combineDebug('done');
   })
   .catch(function(err) {
     console.error(err);
@@ -42,12 +49,14 @@ q.all([src, data])
  */
 function parseSrc(path) {
   var defer = q.defer();
+  var parseDebug = debug('parser:parse');
 
   fs.readFile(path, 'utf8', function(err, data) {
     if(err) {
       defer.reject(err);
       return;
     }
+    parseDebug('loaded ' + path);
 
     var x = xray();
     x(data, '.g-republican-table table.g-results-table tr.g-row-results', [{
@@ -76,8 +85,10 @@ function parseSrc(path) {
           row.date = lastDate;
         }
 
+
         // skip republican only rows
         if(row.classes.indexOf('g-row-republican') >= 0) {
+          parseDebug('skipping republican row ' + row.name);
           return;
         }
 
@@ -92,6 +103,7 @@ function parseSrc(path) {
         row.date = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
 
         demResults.push(row);
+        parseDebug('parsed ', row);
       });
 
       defer.resolve(demResults);

@@ -98,13 +98,13 @@
     "abbv": "ID",
     "electoralVotes": 4,
     "party": "republican",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 1948,
     "historyUrl": "http://www.270towin.com/states/Idaho",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
-      "total": 27
+      "clinton": 5,
+      "sanders": 17,
+      "total": 22
     },
     "points": {
       "x": 190.43,
@@ -112,8 +112,9 @@
     },
     "primary": {
       "type": "primary-open",
-      "date": "2016-03-22"
-    }
+      "date": "2016-3-22"
+    },
+    "resultsUrl": "http://www.nytimes.com/elections/results/idaho"
   },
   {
     "id": "UT",
@@ -121,13 +122,13 @@
     "abbv": "UT",
     "electoralVotes": 6,
     "party": "republican",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 1948,
     "historyUrl": "http://www.270towin.com/states/Utah",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
-      "total": 37
+      "clinton": 5,
+      "sanders": 18,
+      "total": 23
     },
     "points": {
       "x": 217.521,
@@ -135,8 +136,9 @@
     },
     "primary": {
       "type": "caucus-semi",
-      "date": "2016-03-22"
-    }
+      "date": "2016-3-22"
+    },
+    "resultsUrl": "http://www.nytimes.com/elections/results/utah"
   },
   {
     "id": "AZ",
@@ -144,13 +146,13 @@
     "abbv": "AZ",
     "electoralVotes": 11,
     "party": "republican",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/Arizona",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
-      "total": 85
+      "clinton": 41,
+      "sanders": 22,
+      "total": 63
     },
     "points": {
       "x": 200.43,
@@ -158,8 +160,9 @@
     },
     "primary": {
       "type": "primary-closed",
-      "date": "2016-03-22"
-    }
+      "date": "2016-3-22"
+    },
+    "resultsUrl": "http://www.nytimes.com/elections/results/arizona"
   },
   {
     "id": "MT",

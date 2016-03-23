@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "debug": "^2.2.0",
     "lodash": "^4.6.1",
     "q": "^1.4.1",
     "x-ray": "^2.0.3"
