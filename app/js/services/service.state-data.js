@@ -22,7 +22,7 @@
               self.voted = _.filter(self.states, 'winner');
 
               _.forEach(self.states, function(state) {
-                state.primary.date = moment(state.primary.date);
+                state.primary.date = moment(state.primary.date, 'YYYY-M-D');
                 state.primary.type = parsePrimaryType(state.primary.type);
                 state.delegates.percents = {
                   clinton: (state.delegates.clinton / state.delegates.total) * 100,
