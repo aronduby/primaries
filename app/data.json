@@ -18,8 +18,9 @@
       "y": 2
     },
     "primary": {
-      "type": "caucus-open",
-      "date": "2016-03-26"
+      "type": "caucus",
+      "date": "2016-03-26",
+      "privacy": "open"
     }
   },
   {
@@ -41,8 +42,9 @@
       "y": 76.984
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-05-17"
+      "type": "primary",
+      "date": "2016-05-17",
+      "privacy": "closed"
     }
   },
   {
@@ -64,8 +66,9 @@
       "y": 219.984
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-06-07"
+      "type": "primary",
+      "date": "2016-06-07",
+      "privacy": "semi-open"
     }
   },
   {
@@ -87,8 +90,9 @@
       "y": 188.891
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-2-20"
+      "type": "caucus",
+      "date": "2016-2-20",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/nevada"
   },
@@ -111,8 +115,9 @@
       "y": 99.891
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-22"
+      "type": "primary",
+      "date": "2016-3-22",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/idaho"
   },
@@ -135,8 +140,9 @@
       "y": 211.523
     },
     "primary": {
-      "type": "caucus-semi",
-      "date": "2016-3-22"
+      "type": "caucus",
+      "date": "2016-3-22",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/utah"
   },
@@ -159,8 +165,9 @@
       "y": 313.891
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-3-22"
+      "type": "primary",
+      "date": "2016-3-22",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/arizona"
   },
@@ -183,8 +190,9 @@
       "y": 38.814
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-06-07"
+      "type": "primary",
+      "date": "2016-06-07",
+      "privacy": "open"
     }
   },
   {
@@ -206,8 +214,9 @@
       "y": 137.309
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-04-09"
+      "type": "caucus",
+      "date": "2016-04-09",
+      "privacy": "closed"
     }
   },
   {
@@ -229,8 +238,9 @@
       "y": 228.623
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-3-1"
+      "type": "caucus",
+      "date": "2016-3-1",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/colorado"
   },
@@ -253,8 +263,9 @@
       "y": 321.15
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-06-07"
+      "type": "primary",
+      "date": "2016-06-07",
+      "privacy": "closed"
     }
   },
   {
@@ -276,8 +287,9 @@
       "y": 49.15
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-06-07"
+      "type": "primary",
+      "date": "2016-06-07",
+      "privacy": "open"
     }
   },
   {
@@ -299,8 +311,9 @@
       "y": 110.387
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-06-14"
+      "type": "primary",
+      "date": "2016-06-14",
+      "privacy": "closed"
     }
   },
   {
@@ -322,8 +335,9 @@
       "y": 177.29
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-5"
+      "type": "primary",
+      "date": "2016-3-5",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/nebraska"
   },
@@ -346,8 +360,9 @@
       "y": 242.29
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-3-5"
+      "type": "caucus",
+      "date": "2016-3-5",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/kansas"
   },
@@ -370,8 +385,9 @@
       "y": 311.1
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/oklahoma"
   },
@@ -394,8 +410,9 @@
       "y": 392.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/texas"
   },
@@ -418,8 +435,9 @@
       "y": 80.29
     },
     "primary": {
-      "type": "caucus-open",
-      "date": "2016-3-1"
+      "type": "caucus",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/minnesota"
   },
@@ -442,8 +460,9 @@
       "y": 166.151
     },
     "primary": {
-      "type": "caucus-semi",
-      "date": "2016-2-1"
+      "type": "caucus",
+      "date": "2016-2-1",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/iowa"
   },
@@ -466,8 +485,9 @@
       "y": 239.69
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-15"
+      "type": "primary",
+      "date": "2016-3-15",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/missouri"
   },
@@ -490,8 +510,9 @@
       "y": 321.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/arkansas"
   },
@@ -514,8 +535,9 @@
       "y": 360.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-8"
+      "type": "primary",
+      "date": "2016-3-8",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/mississippi"
   },
@@ -538,8 +560,9 @@
       "y": 401.628
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-3-5"
+      "type": "primary",
+      "date": "2016-3-5",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/louisiana"
   },
@@ -562,8 +585,9 @@
       "y": 108.862
     },
     "primary": {
-      "type": "caucus-open",
-      "date": "2016-04-05"
+      "type": "caucus",
+      "date": "2016-04-05",
+      "privacy": "open"
     }
   },
   {
@@ -585,8 +609,9 @@
       "y": 218.677
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-15"
+      "type": "primary",
+      "date": "2016-3-15",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/illinois"
   },
@@ -609,8 +634,9 @@
       "y": 131.677
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-8"
+      "type": "primary",
+      "date": "2016-3-8",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/michigan"
   },
@@ -633,8 +659,9 @@
       "y": 186.151
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-15"
+      "type": "primary",
+      "date": "2016-3-15",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/ohio"
   },
@@ -657,8 +684,9 @@
       "y": 203.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-05-03"
+      "type": "primary",
+      "date": "2016-05-03",
+      "privacy": "open"
     }
   },
   {
@@ -680,8 +708,9 @@
       "y": 2
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-05-10"
+      "type": "primary",
+      "date": "2016-05-10",
+      "privacy": "semi-open"
     }
   },
   {
@@ -703,8 +732,9 @@
       "y": 34
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-05-17"
+      "type": "primary",
+      "date": "2016-05-17",
+      "privacy": "closed"
     }
   },
   {
@@ -726,8 +756,9 @@
       "y": 289.254
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/tennessee"
   },
@@ -750,8 +781,9 @@
       "y": 34.814
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-3-6"
+      "type": "caucus",
+      "date": "2016-3-6",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/maine"
   },
@@ -774,8 +806,9 @@
       "y": 79.289
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/vermont"
   },
@@ -798,8 +831,9 @@
       "y": 92.438
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-2-9"
+      "type": "primary",
+      "date": "2016-2-9",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/new-hampshire"
   },
@@ -822,8 +856,9 @@
       "y": 110.69
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/massachusetts"
   },
@@ -846,8 +881,9 @@
       "y": 124.989
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-04-26"
+      "type": "primary",
+      "date": "2016-04-26",
+      "privacy": "semi-open"
     }
   },
   {
@@ -869,8 +905,9 @@
       "y": 127.989
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-04-26"
+      "type": "primary",
+      "date": "2016-04-26",
+      "privacy": "semi-open"
     }
   },
   {
@@ -892,8 +929,9 @@
       "y": 109.896
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-04-19"
+      "type": "primary",
+      "date": "2016-04-19",
+      "privacy": "closed"
     }
   },
   {
@@ -915,8 +953,9 @@
       "y": 155.956
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-06-07"
+      "type": "primary",
+      "date": "2016-06-07",
+      "privacy": "closed"
     }
   },
   {
@@ -938,8 +977,9 @@
       "y": 159.655
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-04-26"
+      "type": "primary",
+      "date": "2016-04-26",
+      "privacy": "closed"
     }
   },
   {
@@ -961,8 +1001,9 @@
       "y": 195.192
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-04-26"
+      "type": "primary",
+      "date": "2016-04-26",
+      "privacy": "closed"
     }
   },
   {
@@ -984,8 +1025,9 @@
       "y": 211.916
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-04-26"
+      "type": "primary",
+      "date": "2016-04-26",
+      "privacy": "closed"
     }
   },
   {
@@ -1007,8 +1049,9 @@
       "y": 239.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/virginia"
   },
@@ -1031,8 +1074,9 @@
       "y": 279.628
     },
     "primary": {
-      "type": "primary-semi",
-      "date": "2016-3-15"
+      "type": "primary",
+      "date": "2016-3-15",
+      "privacy": "semi-open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/north-carolina"
   },
@@ -1055,8 +1099,9 @@
       "y": 318.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-2-27"
+      "type": "primary",
+      "date": "2016-2-27",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/south-carolina"
   },
@@ -1079,8 +1124,9 @@
       "y": 359.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/georgia"
   },
@@ -1103,8 +1149,9 @@
       "y": 360.628
     },
     "primary": {
-      "type": "primary-open",
-      "date": "2016-3-1"
+      "type": "primary",
+      "date": "2016-3-1",
+      "privacy": "open"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/alabama"
   },
@@ -1127,8 +1174,9 @@
       "y": 446.094
     },
     "primary": {
-      "type": "primary-closed",
-      "date": "2016-3-15"
+      "type": "primary",
+      "date": "2016-3-15",
+      "privacy": "closed"
     },
     "resultsUrl": "http://www.nytimes.com/elections/results/florida"
   },
@@ -1151,8 +1199,9 @@
       "y": 441.891
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-03-26"
+      "type": "caucus",
+      "date": "2016-03-26",
+      "privacy": "closed"
     }
   },
   {
@@ -1174,8 +1223,9 @@
       "y": 484.746
     },
     "primary": {
-      "type": "caucus-closed",
-      "date": "2016-03-26"
+      "type": "caucus",
+      "date": "2016-03-26",
+      "privacy": "closed"
     }
   }
 ]

@@ -26,7 +26,7 @@
             <span class="number">{{ smvm.state.delegates.total }}</span> total delegates
         </section>
         <section class="primary col-xs">
-            <span class="primary--type">{{ smvm.state.primary.type }}</span>
+            <span class="primary--type">{{ smvm.state.primary.privacy + ' ' + smvm.state.primary.type }}</span>
             &bull; <span class="primary--date">{{ smvm.state.primary.date | amCalendar }}</span>
         </section>
     </section>
@@ -34,7 +34,7 @@
 
 <div ng-if="!smvm.state.winner" class="modal-body not-voted">
     <p class="total-delegates">{{ smvm.state.delegates.total }} Delegates</p>
-    <p class="primary--type">{{ smvm.state.primary.type }}</p>
+    <p class="primary--type">{{ smvm.state.primary.privacy + ' ' + smvm.state.primary.type }}</p>
     <p class="primary--date">{{ smvm.state.primary.date | amCalendar }}</p>
 </div>
 

@@ -18,7 +18,7 @@
                     <h3 class="party">{{ state.party }}</h3>
                     <div class="details">
                         <span class="delegates"><span class="number">{{ state.delegates.total }}</span> delegates</span>
-                        <span class="primary--type">{{ state.primary.type }}</span>
+                        <span class="primary--type">{{ state.primary.privacy + ' ' + state.primary.type }}</span>
                         <span class="primary--date">{{ state.primary.date | amCalendar }}</span>
                     </div>
                 </th>

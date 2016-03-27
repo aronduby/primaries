@@ -23,7 +23,6 @@
 
               _.forEach(self.states, function(state) {
                 state.primary.date = moment(state.primary.date, 'YYYY-M-D');
-                state.primary.type = parsePrimaryType(state.primary.type);
                 state.delegates.percents = {
                   clinton: (state.delegates.clinton / state.delegates.total) * 100,
                   sanders: (state.delegates.sanders / state.delegates.total) * 100
@@ -52,20 +51,5 @@
       }
 
     });
-
-  function parsePrimaryType(type) {
-    var parts = type.split('-');
-    var kind = parts[0];
-    var privacy = parts[1];
-
-    if(privacy === 'semi') {
-      privacy = 'Semi-Open';
-    } else {
-      privacy = _.capitalize(privacy);
-    }
-
-    return privacy + ' ' + _.capitalize(kind);
-
-  }
 
 })();
