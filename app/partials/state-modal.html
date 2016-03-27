@@ -23,7 +23,7 @@
 
     <section class="details row bottom-xs">
         <section class="total-delegates col-xs">
-            <span class="number">{{ smvm.state.delegates.total }}</span> total delegates
+            <span class="number">{{ smvm.state.delegates.total }}</span> pledged delegates
         </section>
         <section class="primary col-xs">
             <span class="primary--type">{{ smvm.state.primary.privacy + ' ' + smvm.state.primary.type }}</span>
@@ -39,10 +39,13 @@
 </div>
 
 <footer class="outside-modal--bottom modal-links">
-    <a class="twoseventy" ng-href="{{ smvm.state.historyUrl }}" target="_blank" title="Past Election Data on 270ToWin.com">
+    <a class="twoseventy" ng-href="{{ smvm.state | urls:'history' }}" target="_blank" title="Past Election Data on 270ToWin.com">
         <img src="images/270toWin-icon.png" alt="270toWin state voting history" />
     </a>
-    <a ng-if="smvm.state.resultsUrl" ng-href="{{ smvm.state.resultsUrl }}" target="_blank" title="Results Breakdown on New York Times">
+    <a ng-if="smvm.state.winner" ng-href="{{ smvm.state | urls:'cnn' }}" target="_blank" title="Results on CNN">
+        <icon src="'cnn'"></icon>
+    </a>
+    <a ng-if="smvm.state.winner" ng-href="{{ smvm.state | urls:'nyt' }}" target="_blank" title="Results on New York Times">
         <icon src="'nyt'"></icon>
     </a>
 </footer>
