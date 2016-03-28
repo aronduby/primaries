@@ -87,10 +87,44 @@
 
         <script type="text/ng-template" id="outstanding-graph-content.html">
             <div class="state-data">
-                <h4 class="state-data-abbv" data-title="{{ name }}">{{ abbv }}</h4>
+                <h4 class="state-data-abbv state-font" data-title="{{ name }}">{{ abbv }}</h4>
                 <h5 class="state-data-total">{{ delegates.total }}</h5>
             </div>
         </script>
+
+    </div>
+</article>
+
+<article id="latest" class="red" data-title="The Latest">
+    <div class="content" ng-controller="LatestController as latest">
+        <header>
+            <h1>The Latest</h1>
+        </header>
+
+    <div class="latest-holder">
+        <section class="latest-state" ng-repeat="state in latest.latest" ng-class="state.party">
+            <h1 class="state"><span class="state-abbv state-font">{{ state.abbv }}</span>{{ state.name }}</h1>
+            <candidate-image key="state.winner"></candidate-image>
+            <section class="primary col-xs">
+                <span class="primary--date">{{ state.primary.date | amCalendar }}</span>
+            </section>
+            <table class="delegates">
+                <thead>
+                    <tr>
+                        <th ng-class="{winner: state.winner === 'clinton'}">Clinton</th>
+                        <th ng-class="{winner: state.winner === 'sanders'}">Sanders</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td ng-class="{winner: state.winner === 'clinton'}">{{ state.delegates.clinton }}</td>
+                        <td ng-class="{winner: state.winner === 'sanders'}">{{ state.delegates.sanders }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
 
     </div>
 </article>

@@ -1,0 +1,78 @@
+#latest {
+
+  .latest-holder {
+    margin: auto;
+    margin-top: 3em;
+  }
+
+  .latest-state {
+    position: relative;
+    padding: 2em 0 1em 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    &:first-child { border-top: none; }
+    &:last-child { border-bottom: none; }
+
+    h1 .state-abbv {
+      display: block;
+      font-size: 4em;
+      line-height: .8em;
+      opacity: .8;
+    }
+
+    candidate-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      img {
+        font-size: 7.25em;
+        width: 2.75em;
+        margin-right: -.5em;
+      }
+    }
+
+    .delegates {
+      margin: 0 auto;
+
+      th {
+        font-weight: normal;
+        padding: 0 .25em;
+      }
+
+      .winner {
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (min-width: 480px) {
+    .latest-holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .latest-state {
+      border: none;
+      margin: .25em;
+
+      candidate-image{
+        z-index:2;
+
+        img {
+          max-width: 105px;
+          margin-right: -.25em;
+        }
+      }
+
+      .state-abbv {
+        z-index: 1;
+      }
+
+    }
+
+  }
+
+}

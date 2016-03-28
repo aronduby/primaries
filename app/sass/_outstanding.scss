@@ -17,7 +17,6 @@
       left: -1.125em;
 
       .state-data-abbv {
-        @include state-font;
         font-size: em(32);
         opacity: .8;
       }
