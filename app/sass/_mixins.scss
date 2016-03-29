@@ -12,7 +12,7 @@
 /// creates the text shadow for the state font abbreviation
 /// @param {Color} $color - the color of the shadow
 @mixin state-font-shadow($color) {
-  text-shadow: 1px 2px 0 $color;
+  text-shadow: .01em .02em 0 $color;
 }
 
 /// px to em conversion

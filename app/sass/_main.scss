@@ -29,3 +29,29 @@ h1, h2, h3, h4, h5, h6 {
 .state-font {
   @include state-font;
 }
+
+.button {
+  background: rgba(255,255,255,.2);
+  border: 1px solid rgba(0,0,0,.15);
+  padding: .75em 2.5em;
+  border-radius: 1.5em;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  outline: none;
+  transition: all .25s ease;
+
+  &:hover {
+    background: rgba(255,255,255,.4);
+  }
+}
+
+.align--left {
+  text-align: left;
+}
+
+.align--center {
+  text-align: center;
+}
+
+.align--right {
+  text-align: right;
+}

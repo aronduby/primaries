@@ -1,0 +1,37 @@
+#next {
+  .date {
+    margin-top: .5em;
+
+    h1 {
+      letter-spacing: -.06em;
+      font-size: 3.5em;
+      color: white;
+      text-shadow: 1px 2px 0 rgba(0,0,0,.5);
+    }
+  }
+
+  .staterow {
+    margin-top: $article-padding;
+    justify-content: center;
+  }
+
+  .delegates {
+    font-weight: normal;
+    font-size: 1em;
+    position: absolute;
+    top: 5em;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 4px rgba(0,0,0,.5);
+
+    .number {
+      display: block;
+      font-weight: bold;
+      font-size: 3.5em;
+    }
+  }
+
+  .state-abbv {
+    font-size: 5em;
+  }
+}

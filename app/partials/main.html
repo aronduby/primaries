@@ -42,7 +42,7 @@
     </div>
 </article>
 
-<article id="latest" class="blue" data-title="The Latest">
+<article id="latest" class="blue">
     <div class="content" ng-controller="LatestController as latest">
         <header>
             <h1>What's <small>the</small> Latest</h1>
@@ -127,6 +127,66 @@
 
     </div>
 </article>
+
+<div class="wrapper white no-frills" ng-controller="NextController as next">
+    <article id="next" class="white--lighter">
+        <div class="content">
+            <header>
+                <h1>Who's <small>up</small> Next</h1>
+            </header>
+
+            <section class="date">
+                <header>
+                    <h1>{{ next.date | amCalendar }}</h1>
+                </header>
+            </section>
+
+            <div class="staterow staterow--colored">
+                <section class="staterow-state" ng-repeat="state in next.states" ng-class="state.party">
+                    <h1 class="state"><span class="state-abbv state-font">{{ state.abbv }}</span>{{ state.name }}</h1>
+                    <h2 class="delegates">
+                        <span class="number">{{ state.delegates.total }}</span> pledged delegates
+                    </h2>
+                    <section class="primary col-xs">
+                        <span class="primary--type">{{ state.primary.privacy + ' ' + state.primary.type }}</span>
+                    </section>
+                </section>
+            </div>
+
+        </div>
+    </article>
+
+    <article id="schedule">
+        <div class="content">
+            <button class="button" ng-click="next.toggleTable()">{{ next.showing ? 'Hide' : 'View' }} Remaining Schedule</button>
+
+            <table class="schedule table" ng-class="{'visible': next.showing }">
+                <thead>
+                <tr>
+                    <th class="align--left">Date</th>
+                    <th class="align--center"></th>
+                    <th class="align--left">State</th>
+                    <th class="align--center hidden-xs">Party</th>
+                    <th class="align--left">Type</th>
+                    <th class="align--center">Delegates</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="state in next.upcoming" ng-class="state.party">
+                    <th class="date align--left" ng-class="{'date--repeated': next.isDateRepeated(state, $index)}">{{ state.primary.date | amCalendar }}</th>
+                    <td class="state-abbv state-font align--center">{{ state.abbv }}</td>
+                    <td class="state-name align--left">{{ state.name }}</td>
+                    <td class="align--center hidden-xs"><icon src="state.party"></icon></td>
+                    <td class="align--left">{{ state.primary.privacy + ' ' + state.primary.type }}</td>
+                    <td class="align--center">{{ state.delegates.total }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+
+
+</div>
 
 <footer class="sources">
     <div class="content">

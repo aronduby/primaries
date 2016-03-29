@@ -1,7 +1,7 @@
 @mixin article($color) {
   $type: map-get($articles, $color);
 
-  background: radial-gradient(center, circle farthest-corner, map-get($type, gradient-from), map-get($type, gradient-to) 50%);
+  background: radial-gradient(center, circle farthest-side, map-get($type, gradient-from), map-get($type, gradient-to) 50%);
   color: map-get($type, text-color);
 
   &::before {
@@ -87,6 +87,10 @@
 
 article.white {
   @include article(white);
+}
+
+article.white--lighter {
+  @include article(whiteLighter);
 }
 
 article.green {

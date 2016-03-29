@@ -1,0 +1,66 @@
+body #container #schedule {
+  margin-top: -2em;
+  padding: $article-padding 0;
+
+  @media (min-width: $screen-xs-min) {
+    padding: $article-padding;
+  }
+
+  table {
+    margin-top: 2em;
+    display: none;
+
+    @media (min-width: $screen-xs-min) {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.1em;
+    }
+
+    tbody td,
+    tbody th {
+      vertical-align: middle;
+
+      &.state-name {
+        white-space: nowrap;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      &.state-abbv {
+        font-size: 2em;
+        padding: 0;
+
+        @media (min-width: $screen-xs-min) {
+          font-size: 2.5em;
+        }
+      }
+
+      &.date--repeated {
+        visibility: hidden;
+        border: none;
+      }
+    }
+
+    tr {
+      &.democrat .state-abbv {
+        @include state-font-shadow($democrat-stroke);
+        color: $democrat;
+      }
+
+      &.republican .state-abbv {
+        @include state-font-shadow($republican-stroke);
+        color: $republican;
+      }
+
+      &.swing .state-abbv {
+        @include state-font-shadow($swing-stroke);
+        color: $swing;
+      }
+    }
+  }
+
+  table.visible {
+    display: table;
+  }
+}
