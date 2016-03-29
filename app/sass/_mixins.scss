@@ -7,6 +7,14 @@
   background: linear-gradient(to bottom, $from 0%, $from 50%, $to 50%, $to 100%);
 }
 
+/// state-font-shadow
+/// -----------------------------------------------
+/// creates the text shadow for the state font abbreviation
+/// @param {Color} $color - the color of the shadow
+@mixin state-font-shadow($color) {
+  text-shadow: 1px 2px 0 $color;
+}
+
 /// px to em conversion
 /// -----------------------------------------------
 /// @param {Number} $pixels - the pixel size we are converting

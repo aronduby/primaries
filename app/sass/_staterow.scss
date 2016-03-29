@@ -1,0 +1,59 @@
+
+
+.staterow{
+  margin: auto;
+  margin-top: 3em;
+
+  .staterow-state {
+    position: relative;
+    padding: 2em 0 1em 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    &:first-child { border-top: none; }
+    &:last-child { border-bottom: none; }
+
+    h1 .state-abbv {
+      display: block;
+      font-size: 4em;
+      line-height: .8em;
+      opacity: .8;
+    }
+  }
+
+  &.staterow--colored {
+    h1 .state-abbv {
+      opacity: 1;
+    }
+
+    .democrat .state-abbv {
+      @include state-font-shadow($democrat-stroke);
+      color: $democrat;
+    }
+
+    .republican .state-abbv {
+      @include state-font-shadow($republican-stroke);
+      color: $republican;
+    }
+
+    .swing .state-abbv {
+      @include state-font-shadow($swing-stroke);
+      color: $swing;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .staterow-state {
+      border: none;
+      margin: .25em;
+
+      .state-abbv {
+        z-index: 1;
+      }
+    }
+  }
+}
