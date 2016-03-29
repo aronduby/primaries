@@ -9,7 +9,7 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Washington",
     "delegates": {
-      "clinton": 18,
+      "clinton": 19,
       "sanders": 65,
       "total": 101
     },
@@ -1197,8 +1197,8 @@
     "winner": "sanders",
     "lastDemVictory": 2012,
     "delegates": {
-      "clinton": 1,
-      "sanders": 9,
+      "clinton": 5,
+      "sanders": 16,
       "total": 25
     },
     "points": {
