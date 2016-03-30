@@ -1,0 +1,38 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: .5em;
+  font-size: 1.125em;
+  color: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, .2);
+  z-index: 1000;
+
+  .navigation {
+    cursor: pointer;
+
+    i.fa {
+      margin-right: .5em;
+    }
+  }
+
+  .sharing {
+    flex: 1;
+    text-align: right;
+    font-size: 1.3em;
+
+    span {
+      margin: 0 .1em;
+      cursor: pointer;
+    }
+  }
+}
+
+#container > article:first-child,
+#container > .wrapper:first-child {
+  padding-top: 40px;
+}

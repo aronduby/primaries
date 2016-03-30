@@ -1,12 +1,15 @@
 (function() {
   'use strict';
 
-  angular.module('primaries', ['ngRoute', 'ui.bootstrap', 'angularMoment'])
+  angular.module('primaries', ['ngRoute', 'ui.bootstrap', 'angularMoment', 'duScroll'])
 
     .value('dataUrl', 'data.json')
     .value('styleVarsUrl', 'css/vars/_variables.json')
     .value('DelegatesToWin', 2383)
     .value('ElectoralVotesToWin', 270)
+
+    .value('duStopPropagation', false)
+    .value('duScrollOffset', 45)
 
     .config(config)
     .controller('MainController', function(states) {

@@ -1,5 +1,5 @@
-#container > #table,
-#container .wrapper > #table{
+#container > #state-table,
+#container .wrapper > #state-table{
   color: map_get(map_get($articles, white), text-color);
   padding-bottom: -$candidate-image-header-around;
 

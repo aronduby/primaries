@@ -23,6 +23,10 @@
     "lodash": "~4.6.1",
     "angular-bootstrap": "^1.2.4",
     "moment": "<2.11.0",
-    "angular-moment": "^0.10.3"
+    "angular-moment": "^0.10.3",
+    "angular-scroll": "https://github.com/aronduby/angular-scroll.git#master"
+  },
+  "resolutions": {
+    "angular-scroll": "^1.0.0"
   }
 }

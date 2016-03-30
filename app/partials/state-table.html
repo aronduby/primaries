@@ -1,6 +1,6 @@
 <article class="state-table-holder">
 
-    <button class="button" ng-click="stvm.toggleTable()">{{ stvm.showing ? 'Hide' : 'View' }} Table</button>
+    <button class="button" ng-click="stvm.toggleTable()" du-smooth-scroll="state-table">{{ stvm.showing ? 'Hide' : 'View' }} Table</button>
 
     <table class="state-table" ng-class="{'state-table--visible': stvm.showing }">
         <thead>

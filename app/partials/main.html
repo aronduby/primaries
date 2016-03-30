@@ -1,5 +1,5 @@
-<div class="wrapper white no-frills">
-    <article id="map" class="white">
+<div class="wrapper white no-frills" id="map" data-scroll-title="Where are they Winning?">
+    <article class="white">
         <div class="content">
             <header>
                 <h1>Where <small><span>are</span> <span>they</span></small> Winning?</h1>
@@ -11,14 +11,14 @@
 
         </div>
     </article>
-    <article id="table" class="next-has-candidate-image">
+    <article id="state-table" class="next-has-candidate-image">
         <div class="content">
             <state-table></state-table>
         </div>
     </article>
 </div>
 
-<article id="delegates" class="green">
+<article id="delegates" class="green" data-scroll-title="Doing the Math">
     <div class="content" ng-controller="DelegateController as delegates">
         <header class="candidate-images">
             <candidate-image key="'clinton'" name="'Hillary Clinton'"></candidate-image>
@@ -42,7 +42,7 @@
     </div>
 </article>
 
-<article id="latest" class="blue">
+<article id="latest" class="blue" data-scroll-title="What's the Latest">
     <div class="content" ng-controller="LatestController as latest">
         <header>
             <h1>What's <small>the</small> Latest</h1>
@@ -75,7 +75,7 @@
     </div>
 </article>
 
-<article id="outstanding" class="red">
+<article id="outstanding" class="red" data-scroll-title="Yet to Vote">
     <div class="content" ng-controller="OutstandingController as out">
         <header>
             <h1>Yet <small>to</small> Vote</h1>
@@ -128,8 +128,8 @@
     </div>
 </article>
 
-<div class="wrapper white no-frills" ng-controller="NextController as next">
-    <article id="next" class="white--lighter">
+<div class="wrapper white no-frills" ng-controller="NextController as next" id="next" data-scroll-title="Who's Up Next">
+    <article class="white--lighter">
         <div class="content">
             <header>
                 <h1>Who's <small>up</small> Next</h1>
@@ -158,9 +158,9 @@
 
     <article id="schedule">
         <div class="content">
-            <button class="button" ng-click="next.toggleTable()">{{ next.showing ? 'Hide' : 'View' }} Remaining Schedule</button>
+            <button class="button" ng-click="next.toggleTable()" du-smooth-scroll="schedule-table">{{ next.showing ? 'Hide' : 'View' }} Remaining Schedule</button>
 
-            <table class="schedule table" ng-class="{'visible': next.showing }">
+            <table id="schedule-table" class="schedule table" ng-class="{'visible': next.showing }">
                 <thead>
                 <tr>
                     <th class="align--left">Date</th>
@@ -188,7 +188,7 @@
 
 </div>
 
-<footer class="sources">
+<footer id="sources" class="sources">
     <div class="content">
         <ul>
             <li>Primary Results from <a href="http://www.cnn.com/election/"
@@ -203,3 +203,5 @@
         </ul>
     </div>
 </footer>
+
+<nav-bar></nav-bar>

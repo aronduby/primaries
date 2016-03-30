@@ -1,0 +1,26 @@
+<nav id="navbar">
+    <section class="navigation">
+        <div uib-dropdown>
+          <div id="section-dropdown" uib-dropdown-toggle>
+              <i class="fa fa-bars"></i>
+              {{ nav.current.title }}
+          </div>
+          <ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+              <li ng-repeat="section in nav.sections">
+                  <a href du-smooth-scroll="{{ section.id }}" du-scrollspy>{{ section.title }}</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                  <a du-smooth-scroll="sources" du-scrollspy>Sources</a>
+              </li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="sharing">
+        <span class='st_twitter_custom fa fa-twitter' displayText='Tweet'></span>
+        <span class='st_facebook_custom fa fa-facebook' displayText='Facebook'></span>
+        <span class='st_reddit_custom fa fa-reddit-alien' displayText='Reddit'></span>
+        <span class='st_sharethis_custom fa fa-share-alt' displayText='ShareThis'></span>
+    </section>
+</nav>
