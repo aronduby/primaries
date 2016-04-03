@@ -130,10 +130,17 @@ article.red {
 
   @media (min-width: $screen-sm-min) {
     padding: $article-padding * 2;
+    padding-top: $article-padding;
   }
 
   > .content {
     max-width: 100%;
+  }
+
+  .last-updated {
+    margin-bottom: $article-padding;
+    text-align: center;
+    color: #808080;
   }
 
   .icon,

@@ -4,6 +4,7 @@
   angular.module('primaries')
     .service('StateData', function($http, $q, dataUrl) {
       var self    = this;
+      self.lastModified = null;
       self.states = null;
       self.alpha = null;
       self.voted = null;
@@ -17,6 +18,8 @@
         return $http.get(dataUrl)
           .then(
             function success(rsp) {
+              self.lastModified = moment(rsp.headers('last-modified'));
+
               self.states = self.filtered = rsp.data;
               self.alpha = _.sortBy(self.states, 'name');
               self.voted = _.filter(self.states, 'winner');

@@ -188,11 +188,12 @@
 
 </div>
 
-<footer id="sources" class="sources">
+<footer id="sources" class="sources" ng-controller="FooterController as footer">
     <div class="content">
+        <p class="last-updated">Results Updated {{ footer.lastModifiedDisplay }}</p>
         <ul>
             <li>Primary Results from <a href="http://www.cnn.com/election/"
-                target="_blank"><icon src="'cnn'"></icon>CNN</a></li>
+               target="_blank"><icon src="'cnn'"></icon>CNN</a></li>
             <li>Additional primary information from
                 <a href="http://www.nytimes.com/interactive/2016/us/elections/primary-calendar-and-results.html?_r=0"
                     target="_blank"><icon src="'nyt'"></icon>New York Times</a></li>

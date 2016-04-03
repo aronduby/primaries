@@ -13,7 +13,6 @@
 
     .config(config)
     .controller('MainController', function(states) {
-
     });
 
   config.$inject = ['$routeProvider', 'StateDataProvider', 'StyleVariablesProvider', 'moment'];
@@ -40,7 +39,7 @@
 
     $routeProvider
       .when('/', {
-        controller: 'MainController as main',
+        controller: 'MainController as vm',
         templateUrl: 'partials/main.html',
         resolve: resolve
       })
