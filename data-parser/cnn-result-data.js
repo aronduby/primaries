@@ -3,16 +3,18 @@
  * this only needs to be ran once
  *
  */
-var fs      = require('fs');
-var request = require('superagent');
-var debug   = require('debug')('parser');
-var q       = require('q');
-var _       = require('lodash');
-var argv   = require('yargs').argv;
+var fs         = require('fs');
+var request    = require('superagent');
+var debug      = require('debug')('parser');
+var q          = require('q');
+var _          = require('lodash');
+var argv       = require('yargs').argv;
+var cloudflare = require('./credentials').cloudflare;
 
-var cnn          = 'http://data.cnn.com/ELECTION/2016primary/full/D.json';
-var dataPath     = '../app/data.json';
-var outPath      = dataPath; // './test.json';
+var cnn      = 'http://data.cnn.com/ELECTION/2016primary/full/D.json';
+var dataPath = '../app/data.json';
+var dataUrl  = 'http://wherearetheywinning.com/data.json';
+var outPath  = dataPath; // './test.json';
 var candidateMap = {
   1445: 'sanders',
   1746: 'clinton'
@@ -61,6 +63,7 @@ updated(dataPath, cnn)
 
           debug('writing to file');
           fs.writeFile(outPath, JSON.stringify(localData, null, '  '));
+          clearCache(dataUrl);
           debug('done');
 
         })
@@ -173,4 +176,38 @@ function parseData(path) {
   });
 
   return defer.promise;
+}
+
+/**
+ * Uses the clourdflare api to clear the cache of the data file
+ *
+ * @param url the file to clear the cache for
+ */
+function clearCache(url) {
+  var apiUrl = "https://api.cloudflare.com/client/v4/zones/" + cloudflare.ZoneIdentifier + "/purge_cache";
+  var data = {
+    "files": [url]
+  };
+
+  debug('Clearing CloudFlare cache');
+
+  request
+    .del(apiUrl)
+    .set('X-Auth-Key', cloudflare.APIKey)
+    .set('X-Auth-Email', cloudflare.Email)
+    .send(data)
+    .end(function(err, rsp) {
+      if(err) {
+        return console.error(err);
+      }
+
+      if(rsp.body.success) {
+        debug('CloudFlare Cache Cleared');
+      } else {
+        console.error(rsp);
+      }
+    })
+
+
+
 }
