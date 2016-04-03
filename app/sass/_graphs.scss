@@ -29,6 +29,7 @@
     top: -1em;
     left: 50%;
     margin-left: -2px;
+    z-index: 2;
   }
 
   .number {
@@ -68,13 +69,11 @@
   @include clearfix;
   background: rgba(255,255,255,.2);
   border-radius: $border-radius;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: $article-padding * 2;
 
   .left,
   .right {
+    position: relative;
     height: $graph-bar-height - .5em;
     width: 50%;
     float: left;
@@ -90,54 +89,26 @@
   }
 
   .total {
-    font-size: em(16);
-    font-weight: bold;
-    color: rgba(255,255,255,.75);
-    position: absolute;
-    top: 50%;
-    margin-top: - em(8);
+    display: none;
   }
 
   .value {
-    position: relative;
+    position: absolute;
+    top: 125%;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    line-height: .8em;
     font-size: em(29);
-    height: 100%;
-
-    .inner {
-      position: absolute;
-      top: 50%;
-      margin-top: -.25em;
-      white-space: nowrap;
-    }
 
     .percent {
       font-size: .6em;
       letter-spacing: -.04em;
       opacity: .6;
-      vertical-align: middle;
-    }
-  }
-
-  .gt80 {
-    .value .inner {
-      top: 100%;
-      margin: .25em 0 0 0;
-      white-space: normal;
-
-
-      .percent {
-        display: block;
-        margin-top: .4em;
-      }
     }
 
-    &.left .inner {
-      direction: ltr;
-      left: 0;
-    }
-
-    &.right .inner {
-      right: 0;
+    span {
+      display: block;
     }
   }
 
@@ -145,30 +116,71 @@
     justify-content: flex-end;
 
     .inner {
-      direction: rtl;
       right: 0;
-      margin-right: $graph-bar-spacing;
-    }
-
-    .total {
-      left: -$graph-outside;
-      text-align: left;
     }
   }
 
   .right {
     .inner {
-      margin-left: $graph-bar-spacing;
-    }
 
-    .total {
-      left: auto;
-      right: -$graph-outside;
-      text-align: right;
     }
   }
 
 }
+
+@media (min-width: $screen-xs-min) {
+  .graph--center-out {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .total {
+      display: block;
+      font-size: em(16);
+      font-weight: bold;
+      color: rgba(255,255,255,.75);
+      position: absolute;
+      top: 50%;
+      margin-top: - em(8);
+    }
+
+    .bar {
+      position: relative;
+    }
+
+    .value {
+      width: auto;
+      top: 110%;
+    }
+
+    .left {
+      .value {
+        left: 0;
+        text-align: left;
+      }
+
+      .total {
+        left: -$graph-outside;
+        text-align: left;
+      }
+    }
+
+    .right {
+      .value {
+        text-align: right;
+        right: 0;
+      }
+
+      .total {
+        left: auto;
+        right: -$graph-outside;
+        text-align: right;
+      }
+    }
+  }
+}
+
+
 
 graph-flex-bar[click] .bar {
   cursor: pointer;
