@@ -6,11 +6,12 @@
       return {
         restrict: 'A',
         scope: {},
-        require: '^^svgMap',
+        require: ['^^svgMap', '^mapControl'],
         link: link
       };
 
-      function link(scope, elm, attr, mapCtrl) {
+      function link(scope, elm, attr, controllers) {
+        var mapCtrl = controllers[1];
         var data   = _.find(StateData.states, {'abbv': elm.attr('id')});
         scope.data = data;
 
@@ -47,7 +48,7 @@
         $compile(elm)(scope);
 
         function click() {
-          mapCtrl.click(data);
+          mapCtrl.stateClick(data);
         }
       }
     }]);

@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('primaries')
-        .directive('svgMap', ['$compile', '$uibModal', 'StyleVariables', function($compile, $modal, style) {
+        .directive('svgMap', ['$compile', 'StyleVariables', function($compile, style) {
             return {
                 restrict: 'E',
                 scope: {},
@@ -38,17 +38,7 @@
             }
 
             function mapCtrl() {
-                this.click = function(state) {
-                    $modal.open({
-                        templateUrl: 'partials/state-modal.html',
-                        controller: 'StateModalController',
-                        resolve: {
-                            state: function(){
-                                return state;
-                            }
-                        }
-                    });
-                };
+
             }
 
         }]);

@@ -8,7 +8,6 @@
       self.states = null;
       self.alpha = null;
       self.voted = null;
-      self.filtered = null;
 
       this.fetch = function() {
         if(this.states) {
@@ -20,7 +19,7 @@
             function success(rsp) {
               self.lastModified = moment(rsp.headers('last-modified'));
 
-              self.states = self.filtered = rsp.data;
+              self.states = rsp.data;
               self.alpha = _.sortBy(self.states, 'name');
               self.voted = _.filter(self.states, 'winner');
 
@@ -38,20 +37,6 @@
             }
           );
       };
-
-      this.previous = function(id) {
-        var idx = _.findIndex(self.filtered, {'id': id});
-        return _.get(self.filtered, '[' + --idx + ']', _.last(self.filtered));
-      };
-
-      this.next = function(id) {
-        var idx = _.findIndex(self.filtered, {'id': id});
-        return _.get(self.filtered, '[' + ++idx + ']', _.first(self.filtered));
-      };
-
-      this.filter = function(conditions) {
-        self.filtered = _.filter(self.states, conditions);
-      }
 
     });
 

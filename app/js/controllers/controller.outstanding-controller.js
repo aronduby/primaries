@@ -4,9 +4,9 @@
   angular.module('primaries')
     .controller('OutstandingController', OutstandingController);
 
-  OutstandingController.$inject = ['DelegatesToWin', 'StateData'];
-  function OutstandingController(DelegatesToWin, StateData) {
-
+  OutstandingController.$inject = ['DelegatesToWin', 'StateData', '$uibModal'];
+  function OutstandingController(DelegatesToWin, StateData, $modal) {
+    var self = this;
     var sort = ['democrat', 'swing', 'republican'];
 
     this.states = _(StateData.states)
@@ -40,8 +40,19 @@
       }
     });
 
-    this.click = function(data) {
-      console.log(data);
+    this.click = function(state) {
+      $modal.open({
+        templateUrl: 'partials/state-modal.html',
+        controller: 'StateModalController',
+        resolve: {
+          state: function(){
+            return state;
+          },
+          allStates: function() {
+            return self.states;
+          }
+        }
+      });
     }
   }
 

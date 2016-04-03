@@ -19,8 +19,10 @@
       }
     });
 
-  ctrl.$inject = ['StateData'];
-  function ctrl(StateData) {
+  ctrl.$inject = ['StateData', '$uibModal'];
+  function ctrl(StateData, $modal) {
+    var filtered = StateData.states;
+
     this.party  = null;
     this.winner = null;
 
@@ -32,8 +34,25 @@
       if(party){ conditions.party = party; }
       if(winner){ conditions.winner = winner; }
 
-      StateData.filter(conditions);
-    }
+      filtered = _.filter(StateData.states, conditions);
+    };
+
+    this.stateClick = function(state) {
+      $modal.open({
+        templateUrl: 'partials/state-modal.html',
+        controller: 'StateModalController',
+        resolve: {
+          state: function(){
+            return state;
+          },
+          allStates: function() {
+            return filtered;
+          }
+        }
+      });
+    };
+
+
   }
 
   function parseVal(val) {
