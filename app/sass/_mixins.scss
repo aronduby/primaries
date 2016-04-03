@@ -97,4 +97,5 @@
 /// sets the font to be the state ligatures font
 @mixin state-font() {
   font-family: 'PT States Narrow', $font-family-sans-serif;
+  font-variant-ligatures: normal;
 }

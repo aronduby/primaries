@@ -1,12 +1,12 @@
 @import 'https://fonts.googleapis.com/css?family=Play:400,700|PT+Sans+Narrow:400,700';
 @import '../css/fonts/dayposterblack/stylesheet';
-@import '../css/fonts/ptstatesnarrow/stylesheet';
 
 @import '_variables';
 @import '_mixins';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
 @import '../../node_modules/flexboxgrid/css/flexboxgrid';
 
+@import "statefont";
 @import '_icons';
 @import '_main';
 @import '_sections';

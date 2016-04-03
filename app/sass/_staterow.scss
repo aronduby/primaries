@@ -13,7 +13,7 @@
     &:first-child { border-top: none; }
     &:last-child { border-bottom: none; }
 
-    h1 .state-abbv {
+    h1 .state-abbv::before {
       display: block;
       font-size: 4em;
       line-height: .8em;
@@ -26,17 +26,17 @@
       opacity: 1;
     }
 
-    .democrat .state-abbv {
+    .democrat .state-abbv::before {
       @include state-font-shadow($democrat-stroke);
       color: $democrat;
     }
 
-    .republican .state-abbv {
+    .republican .state-abbv::before {
       @include state-font-shadow($republican-stroke);
       color: $republican;
     }
 
-    .swing .state-abbv {
+    .swing .state-abbv::before {
       @include state-font-shadow($swing-stroke);
       color: $swing;
     }

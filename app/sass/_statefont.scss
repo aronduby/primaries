@@ -1,0 +1,72 @@
+$state-icons: (
+    (alabama, al, "\e000"),
+    (alaska, ak, "\e001"),
+    (arizona, az, "\e002"),
+    (arkansas, ar, "\e003"),
+    (california, ca, "\e004"),
+    (colorado, co, "\e005"),
+    (connecticut, ct, "\e006"),
+    (delaware, de, "\e007"),
+    (flordia, fl, "\e008"),
+    (georgia, ga, "\e009"),
+    (hawaii, hi, "\e00a"),
+    (idaho, id, "\e00b"),
+    (illinois, il, "\e00c"),
+    (indiana, in, "\e00d"),
+    (iowa, ia, "\e00e"),
+    (kansas, ks, "\e00f"),
+    (kentucky, ky, "\e010"),
+    (louisana, la, "\e011"),
+    (maine, me, "\e012"),
+    (maryland, md, "\e013"),
+    (massaschusetts, ma, "\e014"),
+    (michigan, mi, "\e015"),
+    (minnesota, mn, "\e016"),
+    (mississippi, ms, "\e017"),
+    (missouri, mo, "\e018"),
+    (montana, mt, "\e019"),
+    (nebraska, ne, "\e01a"),
+    (nevada, nv, "\e032"),
+    (new-hampshire, nh, "\e033"),
+    (new-jersey, nj, "\e034"),
+    (new-mexico, nm, "\e035"),
+    (new-york, ny, "\e036"),
+    (north-carolina, nc, "\e037"),
+    (north-dakota, nd, "\e038"),
+    (ohio, oh, "\e039"),
+    (oklahoma, ok, "\e03a"),
+    (oregon, or, "\e03b"),
+    (pennsylvania, pa, "\e03c"),
+    (rhode-island, ri, "\e03d"),
+    (south-carolina, sc, "\e03e"),
+    (south-dakota, sd, "\e03f"),
+    (tennessee, tn, "\e040"),
+    (texas, tx, "\e041"),
+    (utah, ut, "\e042"),
+    (vermont, vt, "\e043"),
+    (virgina, va, "\e044"),
+    (washington-dc, dc, "\e045"),
+    (washington, wa, "\e046"),
+    (west-virgina, wv, "\e047"),
+    (wisconsin, wi, "\e048"),
+    (wyoming, WY, "\e049")
+);
+
+@font-face {
+  font-family: 'PT States Narrow';
+  src: url('fonts/ptstatesnarrow/PT-States-Narrow.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sf {
+  font-family: 'PT States Narrow', $font-family-sans-serif;
+}
+
+@each $name, $abbv, $code in $state-icons {
+  .sf--#{$name}::before,
+  .sf--#{$abbv}::before,
+  .sf--#{to-upper_case($abbv)}::before {
+    content: '#{$code}';
+  }
+}

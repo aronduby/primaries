@@ -50,7 +50,7 @@
 
         <div class="staterow staterow--colored">
             <section class="staterow-state" ng-repeat="state in latest.latest" ng-class="state.party">
-                <h1 class="state"><span class="state-abbv state-font">{{ state.abbv }}</span>{{ state.name }}</h1>
+                <h1 class="state"><span class="state-abbv sf sf--{{ state.abbv }}"></span>{{ state.name }}</h1>
                 <candidate-image key="state.winner"></candidate-image>
                 <section class="primary col-xs">
                     <span class="primary--date">{{ state.primary.date | amCalendar }}</span>
@@ -120,7 +120,7 @@
 
         <script type="text/ng-template" id="outstanding-graph-content.html">
             <div class="state-data">
-                <h4 class="state-data-abbv state-font" data-title="{{ name }}">{{ abbv }}</h4>
+                <h4 class="state-data-abbv sf sf--{{ abbv }}" data-title="{{ name }}"></h4>
                 <h5 class="state-data-total">{{ delegates.total }}</h5>
             </div>
         </script>
@@ -143,7 +143,7 @@
 
             <div class="staterow staterow--colored">
                 <section class="staterow-state" ng-repeat="state in next.states" ng-class="state.party">
-                    <h1 class="state"><span class="state-abbv state-font">{{ state.abbv }}</span>{{ state.name }}</h1>
+                    <h1 class="state"><span class="state-abbv sf sf--{{ state.abbv }}"></span>{{ state.name }}</h1>
                     <h2 class="delegates">
                         <span class="number">{{ state.delegates.total }}</span> pledged delegates
                     </h2>
@@ -174,7 +174,7 @@
                 <tbody>
                 <tr ng-repeat="state in next.upcoming" ng-class="state.party">
                     <th class="date align--left" ng-class="{'date--repeated': next.isDateRepeated(state, $index)}">{{ state.primary.date | amCalendar }}</th>
-                    <td class="state-abbv state-font align--center">{{ state.abbv }}</td>
+                    <td class="state-abbv align--center"><span class="sf sf--{{ state.abbv }}"></span></td>
                     <td class="state-name align--left">{{ state.name }}</td>
                     <td class="align--center hidden-xs"><icon src="state.party"></icon></td>
                     <td class="align--left">{{ state.primary.privacy + ' ' + state.primary.type }}</td>
