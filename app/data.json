@@ -9,8 +9,8 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Washington",
     "delegates": {
-      "clinton": 19,
-      "sanders": 65,
+      "clinton": 27,
+      "sanders": 74,
       "total": 101
     },
     "points": {
@@ -29,12 +29,12 @@
     "abbv": "OR",
     "electoralVotes": 7,
     "party": "democrat",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Oregon",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 24,
+      "sanders": 31,
       "total": 61
     },
     "points": {
@@ -107,7 +107,7 @@
     "historyUrl": "http://www.270towin.com/states/Idaho",
     "delegates": {
       "clinton": 5,
-      "sanders": 17,
+      "sanders": 18,
       "total": 23
     },
     "points": {
@@ -201,12 +201,12 @@
     "abbv": "WY",
     "electoralVotes": 3,
     "party": "republican",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 1948,
     "historyUrl": "http://www.270towin.com/states/Wyoming",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 7,
+      "sanders": 7,
       "total": 14
     },
     "points": {
@@ -229,8 +229,8 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Colorado",
     "delegates": {
-      "clinton": 28,
-      "sanders": 38,
+      "clinton": 25,
+      "sanders": 41,
       "total": 66
     },
     "points": {
@@ -526,7 +526,7 @@
     "lastDemVictory": 1960,
     "historyUrl": "http://www.270towin.com/states/Mississippi",
     "delegates": {
-      "clinton": 29,
+      "clinton": 32,
       "sanders": 4,
       "total": 36
     },
@@ -572,12 +572,12 @@
     "abbv": "WI",
     "electoralVotes": 10,
     "party": "swing",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Wisconsin",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 38,
+      "sanders": 48,
       "total": 86
     },
     "points": {
@@ -600,8 +600,8 @@
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Illinois",
     "delegates": {
-      "clinton": 78,
-      "sanders": 76,
+      "clinton": 79,
+      "sanders": 77,
       "total": 156
     },
     "points": {
@@ -671,12 +671,12 @@
     "abbv": "IN",
     "electoralVotes": 11,
     "party": "republican",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 2008,
     "historyUrl": "http://www.270towin.com/states/Indiana",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 39,
+      "sanders": 44,
       "total": 83
     },
     "points": {
@@ -695,17 +695,17 @@
     "abbv": "WV",
     "electoralVotes": 5,
     "party": "republican",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/West_Virgina",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 11,
+      "sanders": 18,
       "total": 29
     },
     "points": {
-      "x": 719.718,
-      "y": 2
+      "x": 718.135,
+      "y": 219.314
     },
     "primary": {
       "type": "primary",
@@ -719,17 +719,17 @@
     "abbv": "KY",
     "electoralVotes": 8,
     "party": "republican",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 1996,
     "historyUrl": "http://www.270towin.com/states/Kentucky",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 28,
+      "sanders": 27,
       "total": 55
     },
     "points": {
-      "x": 560.243,
-      "y": 34
+      "x": 665.387,
+      "y": 248.588
     },
     "primary": {
       "type": "primary",
@@ -868,12 +868,12 @@
     "abbv": "RI",
     "electoralVotes": 4,
     "party": "democrat",
-    "winner": null,
+    "winner": "sanders",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Rhode_Island",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 11,
+      "sanders": 13,
       "total": 24
     },
     "points": {
@@ -892,12 +892,12 @@
     "abbv": "CT",
     "electoralVotes": 7,
     "party": "democrat",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/Connecticut",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 28,
+      "sanders": 27,
       "total": 55
     },
     "points": {
@@ -916,12 +916,12 @@
     "abbv": "NY",
     "electoralVotes": 29,
     "party": "democrat",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "historyUrl": "http://www.270towin.com/states/New_York",
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 139,
+      "sanders": 108,
       "total": 247
     },
     "points": {
@@ -964,11 +964,11 @@
     "abbv": "PA",
     "electoralVotes": 20,
     "party": "swing",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 105,
+      "sanders": 78,
       "total": 189
     },
     "points": {
@@ -987,11 +987,11 @@
     "abbv": "DE",
     "electoralVotes": 3,
     "party": "democrat",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 12,
+      "sanders": 9,
       "total": 21
     },
     "points": {
@@ -1010,11 +1010,11 @@
     "abbv": "MD",
     "electoralVotes": 10,
     "party": "democrat",
-    "winner": null,
+    "winner": "clinton",
     "lastDemVictory": 2012,
     "delegates": {
-      "clinton": 0,
-      "sanders": 0,
+      "clinton": 59,
+      "sanders": 34,
       "total": 95
     },
     "points": {
@@ -1059,8 +1059,8 @@
     "winner": "clinton",
     "lastDemVictory": 2008,
     "delegates": {
-      "clinton": 59,
-      "sanders": 46,
+      "clinton": 60,
+      "sanders": 47,
       "total": 107
     },
     "points": {
